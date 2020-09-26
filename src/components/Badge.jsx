@@ -17,8 +17,8 @@ const Badge = props => {
                 <h1>{props.form.firstName} <br/> {props.form.lastName} </h1>
             </div>
             <div className="Badge__section--profesion">
-                <p>{props.form.jobTitle}</p>
                 <p>{props.form.email}</p>
+                <p>{props.form.jobTitle}</p>
                 <div>{props.form.twitter}</div>
             </div>
             <div className="Badge__section--platziConf">

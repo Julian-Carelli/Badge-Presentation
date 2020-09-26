@@ -1,11 +1,12 @@
 import React,{useState} from 'react'
-import Navbar from '../components/Navbar'
-import Header from '../assets/images/badge-header.svg'
+
+//Components
+
 import Badge from '../components/Badge'
 import BadgeForm from '../components/BadgeForm'
-import '../assets/styles/pages/BadgeNew.scss'
+import Background from '../components/Background'
 
-const BadgeNew = () => {
+const BadgeNew = props => {
 
     const [state, setState] = useState({
         form:{
@@ -28,15 +29,12 @@ const BadgeNew = () => {
 
     const handleOnSubmit = event => {
         event.preventDefault()
-        console.log(state.form)
+        props.history.push('/badges')
     }
 
     return(
         <>
-        <Navbar></Navbar>
-        <div className="BadgeNew__hero">
-            <img className="BadgeNew__hero--img img-fluid" src={Header} alt="Header de la conferencia"></img>
-        </div>
+        <Background></Background>
         <div className="container">
             <div className="row">
                 <div className="col-6">
