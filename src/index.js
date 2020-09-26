@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import BadgeNew from './pages/BadgeNew'
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './global.scss'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BadgeNew />
   </React.StrictMode>,
   document.getElementById('root')
 );
