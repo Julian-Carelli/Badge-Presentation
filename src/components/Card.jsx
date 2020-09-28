@@ -1,7 +1,16 @@
+//Dependencies
+
 import React from 'react'
 import {Link} from 'react-router-dom'
-import '../assets/styles/components/Card.scss'
+
+//Components
+
 import Gravatar from '../components/Gravatar'
+
+//Assets
+
+import '../assets/styles/components/Card.scss'
+
 
 
 const Card = (props) => {
@@ -14,7 +23,7 @@ const Card = (props) => {
     return(
         <div className="container">
             {stateReverse.map(state => 
-                <Link className="text-reset text-decoration-none" to={`/badges/${state.id}/edit`}>
+                <Link className="text-reset text-decoration-none" to={`/badges/${state.id}`}>
                     <div key={state.id} className="row Card bg-danger">
                         <div className="col-6 Card__img">
                             <Gravatar email={state.email} alt="Avatar"></Gravatar>

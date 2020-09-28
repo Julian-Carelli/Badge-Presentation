@@ -1,4 +1,9 @@
+//Dependencies
+
 import React from 'react'
+
+//Assets
+
 import '../assets/styles/components/Footer.scss'
 
 const Footer = () => (

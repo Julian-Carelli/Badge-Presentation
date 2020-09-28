@@ -1,3 +1,5 @@
+//Dependencies
+
 import React,{useState, useEffect} from 'react'
 
 //Components
@@ -5,9 +7,6 @@ import React,{useState, useEffect} from 'react'
 import Badge from '../components/Badge'
 import BadgeForm from '../components/BadgeForm'
 import Background from '../components/Background'
-
-//Api
-
 import api from '../api'
 
 const BadgeEdit = (props) => {

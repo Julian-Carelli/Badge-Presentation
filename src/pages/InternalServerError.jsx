@@ -1,4 +1,8 @@
+//Dependencies
+
 import React from 'react'
+
+//Components
 
 import Error500 from '../components/Error500'
 

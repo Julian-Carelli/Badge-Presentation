@@ -1,5 +1,10 @@
+//Dependencies
+
 import React from 'react'
 import {Link} from 'react-router-dom'
+
+//Assets
+
 import Astronauts from '../assets/images/astronauts.svg'
 import '../assets/styles/components/Presentation.scss'
 

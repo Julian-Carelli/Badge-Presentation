@@ -1,7 +1,14 @@
+//Dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
+
+//Components
+
 import App from './routes/App'
 import * as serviceWorker from './serviceWorker';
+
+//Assets
+
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './global.scss'
 

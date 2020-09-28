@@ -1,7 +1,15 @@
+//Dependencies
+
 import React from 'react'
+
+//Components
+
+import Gravatar from '../components/Gravatar'
+
+//Assets
+
 import Logo from '../assets/images/platziconf-logo.svg'
 import '../assets/styles/components/Badge.scss'
-import Gravatar from '../components/Gravatar'
 
 const Badge = (props) => {
 

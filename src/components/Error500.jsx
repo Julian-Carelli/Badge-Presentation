@@ -1,6 +1,11 @@
+//Dependencies
+
 import React from 'react'
-import '../assets/styles/components/Error500.scss'
 import {Link} from 'react-router-dom'
+
+//Assets
+
+import '../assets/styles/components/Error500.scss'
 
 const Error500 = () => (
     <div className="container-fluid Error500">

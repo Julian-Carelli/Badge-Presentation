@@ -1,4 +1,8 @@
+//Dependencies
 import React from 'react'
+
+//Components
+
 import md5 from 'md5'
 
 const Gravatar = (props) => {

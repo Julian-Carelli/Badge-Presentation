@@ -1,3 +1,5 @@
+//Dependencies
+
 import React, {useState, useEffect} from 'react'
 
 //Components
@@ -7,10 +9,6 @@ import Redirection from '../components/Redirection'
 import Card from '../components/Card'
 import Loading from '../components/Loading'
 import Error500 from '../components/Error500'
-
-
-//Api
-
 import api from '../api'
 
 const Badges = (props) => {

@@ -1,4 +1,9 @@
+//Dependecies
+
 import React from 'react'
+
+//Assets
+
 import '../assets/styles/components/BadgeForm.scss'
 
 const BadgeForm = props => {
