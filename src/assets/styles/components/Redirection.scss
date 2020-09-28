@@ -1,0 +1,19 @@
+.Redirection {
+    padding: 40px 0px;
+    width: 100%;
+   
+    .Redirection-row {
+        .Redirection__text {
+            display:flex;
+            justify-content: center;
+            h2 {
+                margin:0px 20px;
+
+            }
+            .btn {
+                margin:0px 20px;
+
+            }
+        }
+    }
+}

@@ -1,25 +1,30 @@
 import React from 'react'
 import Logo from '../assets/images/platziconf-logo.svg'
 import '../assets/styles/components/Badge.scss'
+import Gravatar from '../components/Gravatar'
 
-const Badge = props => {
+const Badge = (props) => {
+
+
+    const {firstName, lastName, email, jobTitle, twitter} = props.form
+    
+
     return(
         <div className="Badge">
             <div className="Badge__header">
                 <img src={Logo} alt="Logo de la conferencia"></img>
             </div>
             <div className="Badge__section--name">
-                <img 
-                    className="Badge__avatar"
-                    src="https://www.gravatar.com/avatar?d=identicon"
-                    alt="Avatar">
-                </img>
-                <h1>{props.form.firstName} <br/> {props.form.lastName} </h1>
+                <Gravatar className="Badge__avatar"
+                email={email || 'example@example.com'}
+                alt="Avatar"
+                />
+                <h1>{firstName} <br/> {lastName} </h1>
             </div>
             <div className="Badge__section--profesion">
-                <p>{props.form.email}</p>
-                <p>{props.form.jobTitle}</p>
-                <div>{props.form.twitter}</div>
+                <p>{email}</p>
+                <p>{jobTitle}</p>
+                <div>{twitter}</div>
             </div>
             <div className="Badge__section--platziConf">
                 <p>#PlatziConf</p>

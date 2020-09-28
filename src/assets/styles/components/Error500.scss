@@ -1,0 +1,23 @@
+.Error500 {
+    width:100%;
+    height: 800px;
+    background-image: url('../../images/error500.png');
+    background-repeat: no-repeat;
+    background-color: white;
+    position: absolute;
+    .Error500-row {
+        position: relative;
+        top:50%;
+        left:50%;
+        .Error500__col {
+            .Error500__col--info {
+
+            }
+            .Error500__col--btn {
+                .btn {
+
+                }
+            }
+        }
+    }
+}
