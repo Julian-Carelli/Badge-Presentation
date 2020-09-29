@@ -7,14 +7,18 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 import Layout from '../components/Layout'
 
+//Containers
+
+import BadgeNew from '../containers/BadgeNewContainer'
+import Badges from '../containers/BadgesContainer'
+import BadgeEdit from '../containers/BadgeEditContainer'
+import BadgeDetails from '../containers/BadgeDetailsContainer'
+
 //Pages
 
-import Home from '../pages/Home'
-import BadgeNew from '../pages/BadgeNew'
-import Badges from '../pages/Badges'
-import BadgeEdit from '../pages/BadgeEdit'
-import BadgeDetails from '../pages/BadgeDetailsContainer'
 import NotFound from '../pages/NotFound'
+import Home from '../pages/Home'
+
 
 const App = () => (
 

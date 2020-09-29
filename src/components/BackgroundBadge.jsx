@@ -9,8 +9,6 @@ import '../assets/styles/components/BackgroundBadge.scss'
 
 const BackgroundBadge = (props) => {
 
-    console.log(props)
-
    const {firstName, lastName} = props
 
 

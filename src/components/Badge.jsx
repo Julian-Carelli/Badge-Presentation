@@ -13,12 +13,11 @@ import '../assets/styles/components/Badge.scss'
 
 const Badge = (props) => {
 
-
-    const {firstName, lastName, email, jobTitle, twitter} = props.form
+    const {firstName, lastName, email, jobTitle, twitter, id} = props.data
     
 
     return(
-        <div className="Badge">
+        <div className="Badge" key={id}>
             <div className="Badge__header">
                 <img src={Logo} alt="Logo de la conferencia"></img>
             </div>
