@@ -23,7 +23,7 @@ const BadgeDetailsContainer = (props) => {
 
             try {
                 const data = await api.badges.read(props.match.params.badgeId)
-                setState({loading: false, error:null, data:data, modalIsOpen:true})
+                setState({loading: false, error:null, data:data, modalIsOpen:false})
             }
             catch(error){
                 setState({loading:false, error:error, data:state.data, modalIsOpen:false})
@@ -41,6 +41,24 @@ const BadgeDetailsContainer = (props) => {
         setState({modalIsOpen:false, loading:false, error:null, data:state.data})
     }
 
+    const handleDeleteBadge = async e => {
+        setState({loading:true, error:null, modalIsOpen:true, data:state.data})
+
+        try {
+            await api.badges.remove(
+                props.match.params.badgeId
+            )
+
+            setState({loading:false, error:null, modalIsOpen:true, data:state.data})
+
+            props.history.push('/badges')
+        }
+
+        catch(error){
+            setState({loading:false, error:error, modalIsOpen:false, data:state.data})
+        }
+    }
+
     if(state.loading === true){
         return <Loading></Loading>
     }
@@ -53,7 +71,9 @@ const BadgeDetailsContainer = (props) => {
         <BadgeDetails 
         state={state} 
         handleOnCloseModal={handleOnCloseModal} 
-        handleOnOpenModal={handleOnOpenModal}>
+        handleOnOpenModal={handleOnOpenModal}
+        handleDeleteBadge={handleDeleteBadge}
+        >
         </BadgeDetails>
     )
 }

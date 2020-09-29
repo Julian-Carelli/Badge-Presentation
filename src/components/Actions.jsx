@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 //Components
 
-import Modal from '../components/Modal'
+import DeleteBadgeModal from './DeleteBadgeModal'
 
 const Actions = (props) => {
 
@@ -20,7 +20,7 @@ const Actions = (props) => {
             </div>
             <div>
                 <button onClick={props.onOpenModal} className="btn btn-danger">Eliminar</button>
-                <Modal onClose={props.onCloseModal} isOpen={props.modalIsOpen}>Estas seguro de eliminar este badge?</Modal>
+                <DeleteBadgeModal deleteBadge={props.deleteBadge} onClose={props.onCloseModal} isOpen={props.modalIsOpen}></DeleteBadgeModal>
             </div>
         </div>
         </>

@@ -4,7 +4,6 @@ import React, {useState, useEffect} from 'react'
 
 //Components
 
-
 import Loading from '../components/Loading'
 import Error500 from '../components/Error500'
 import api from '../api'
@@ -43,6 +42,7 @@ const BadgesContainer = () => {
     if(state.error) {
         return <Error500></Error500>
     }
+
 
     return(
         

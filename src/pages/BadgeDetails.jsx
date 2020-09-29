@@ -21,6 +21,7 @@ const BadgeDetails = (props) => (
                     onCloseModal={props.handleOnCloseModal} 
                     onOpenModal={props.handleOnOpenModal}
                     modalIsOpen={props.state.modalIsOpen}
+                    deleteBadge={props.handleDeleteBadge}
                     data={props.state.data}>
                     </Actions>
                 </div>

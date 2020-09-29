@@ -9,6 +9,7 @@ import Loading from '../components/Loading'
 import BadgeNew from '../pages/BadgeNew'
 import api from '../api'
 
+
 const BadgeNewContainer = (props) => {
 
     const [state, setState] = useState({
@@ -51,11 +52,14 @@ const BadgeNewContainer = (props) => {
         return <Loading></Loading>
     }
 
+
+    
     
 
     return(
         <BadgeNew state={state} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeNew>
     )
+
 }
 
 export default BadgeNewContainer
