@@ -17,19 +17,19 @@ const BadgeDetailsContainer = (props) => {
         modalIsOpen: false,
     })
 
-    useEffect(() => {
-        const fetchData = async () => {
-            setState({loading:true, error:null, data:state.data, modalIsOpen:false})
+    const fetchData = async () => {
+        setState({loading:true, error:null, data:state.data, modalIsOpen:false})
 
-            try {
-                const data = await api.badges.read(props.match.params.badgeId)
-                setState({loading: false, error:null, data:data, modalIsOpen:false})
-            }
-            catch(error){
-                setState({loading:false, error:error, data:state.data, modalIsOpen:false})
-            }
-
+        try {
+            const data = await api.badges.read(props.match.params.badgeId)
+            setState({loading: false, error:null, data:data, modalIsOpen:false})
         }
+        catch(error){
+            setState({loading:false, error:error, data:state.data, modalIsOpen:false})
+        }
+    }
+
+    useEffect(() => {
         fetchData()
     }, [])
 

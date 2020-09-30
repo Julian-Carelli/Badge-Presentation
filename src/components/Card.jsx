@@ -28,9 +28,6 @@ const Card = ({state}) => {
 
     },[state, query])
 
-
-   /*  const stateReverse = badge.slice(0).reverse() */
-
     if(filteredBadges.length === 0){
         return (
             <>
@@ -57,7 +54,7 @@ const Card = ({state}) => {
 
     return(
         <div className="container">
-            <div className="form-group">
+            <div className="form-group container-filter">
                 <label>Filtrar Badges</label>
                 <input 
                 className="form-group" 
@@ -69,11 +66,11 @@ const Card = ({state}) => {
             </div>
             {filteredBadges.map(state => 
                 <Link className="text-reset text-decoration-none" key={state.id} to={`/badges/${state.id}`}>
-                    <div  className="row Card bg-danger">
+                    <div  className="row Card bg-white">
                         <div className="col-6 Card__img">
                             <Gravatar email={state.email} alt="Avatar"></Gravatar>
                         </div>
-                        <div className="col-6 Card__text">
+                        <div className="col-6 Card__text text-dark">
                             <h2>{state.firstName} {state.lastName}</h2>
                             <h3>{state.jobTitle}</h3>
                             <p>{state.email}</p>

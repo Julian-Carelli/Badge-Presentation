@@ -13,11 +13,11 @@ import BadgeNew from '../containers/BadgeNewContainer'
 import Badges from '../containers/BadgesContainer'
 import BadgeEdit from '../containers/BadgeEditContainer'
 import BadgeDetails from '../containers/BadgeDetailsContainer'
+import Home from '../containers/HomeContainer'
 
 //Pages
 
 import NotFound from '../pages/NotFound'
-import Home from '../pages/Home'
 
 
 const App = () => (

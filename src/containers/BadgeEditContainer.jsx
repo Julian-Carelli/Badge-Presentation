@@ -23,24 +23,25 @@ const BadgeEditContainer = (props) => {
         }
     })
 
-    useEffect(() => {
-        const fetchData = async () => {
-            setState({loading:true, error:null, data:state.data})
+    const fetchData = async () => {
+        setState({loading:true, error:null, data:state.data})
 
-            try {
+        try {
 
-                const data = await api.badges.read(
-                    props.match.params.badgeId
-                )
+            const data = await api.badges.read(
+                props.match.params.badgeId
+            )
 
-                setState({loading:false, error:null, data:data})
+            setState({loading:false, error:null, data:data})
 
 
-            }
-            catch(error){
-                setState({loading:false, error:error, data:state.data})
-            }
         }
+        catch(error){
+            setState({loading:false, error:error, data:state.data})
+        }
+    }
+
+    useEffect(() => {
         fetchData()
     }, [])
 

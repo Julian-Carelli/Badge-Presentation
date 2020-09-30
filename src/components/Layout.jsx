@@ -5,13 +5,12 @@ import React from 'react'
 
 import Navbar from '../components/Navbar'
 
-const Layout = ({children}) => {
-    return(
-        <>
+const Layout = ({children}) => (
+    <>
         <Navbar></Navbar>
         {children}
-        </>
-    )
-}
+    </>
+)
+
 
 export default Layout

@@ -7,17 +7,17 @@ import ReactDOM from 'react-dom'
 
 import '../assets/styles/components/Modal.scss'
 
-const Modal = (props) => {
-    if(!props.isOpen){
+const Modal = ({isOpen, onClose, children}) => {
+    if(!isOpen){
         return null
     }
     return ReactDOM.createPortal(
         <div className="Modal">
             <div className="Modal__container">
-                <button onClick={props.onClose} className="Modal__close-button">
+                <button onClick={onClose} className="Modal__close-button">
                     X
                 </button>
-                {props.children}
+                {children}
 
             </div>
         </div>,

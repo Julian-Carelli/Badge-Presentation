@@ -7,10 +7,10 @@ import React  from 'react'
 import Footer from '../components/Footer'
 import Presentation from '../components/Presentation'
 
-const Home = () => (
+const Home = ({state}) => (
     <>
-    <Presentation></Presentation>
-    <Footer></Footer>
+        <Presentation state={state}></Presentation>
+        <Footer></Footer>
     </>
 )
 

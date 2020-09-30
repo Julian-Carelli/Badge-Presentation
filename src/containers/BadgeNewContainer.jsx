@@ -4,11 +4,10 @@ import React,{useState} from 'react'
 
 //Components
 
-
 import Loading from '../components/Loading'
+import Error500 from '../components/Error500'
 import BadgeNew from '../pages/BadgeNew'
 import api from '../api'
-
 
 const BadgeNewContainer = (props) => {
 
@@ -52,14 +51,15 @@ const BadgeNewContainer = (props) => {
         return <Loading></Loading>
     }
 
+    if(state.error){
+        return <Error500></Error500>
+    }
 
-    
     
 
     return(
         <BadgeNew state={state} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeNew>
     )
-
 }
 
 export default BadgeNewContainer

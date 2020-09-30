@@ -8,21 +8,21 @@ import BackgroundBadge from '../components/BackgroundBadge'
 import Badge from '../components/Badge'
 import Actions from '../components/Actions'
 
-const BadgeDetails = (props) => (
+const BadgeDetails = ({state, handleOnCloseModal, handleDeleteBadge, handleOnOpenModal}) => (
     <>
-        <BackgroundBadge firstName={props.state.data.firstName} lastName={props.state.data.lastName}></BackgroundBadge>
+        <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
         <div className="container-fluid">
             <div className="row">
                 <div className="col-6">
-                    <Badge data={props.state.data}></Badge>
+                    <Badge data={state.data}></Badge>
                 </div>
                 <div className="col-6">
                     <Actions 
-                    onCloseModal={props.handleOnCloseModal} 
-                    onOpenModal={props.handleOnOpenModal}
-                    modalIsOpen={props.state.modalIsOpen}
-                    deleteBadge={props.handleDeleteBadge}
-                    data={props.state.data}>
+                    onCloseModal={handleOnCloseModal} 
+                    onOpenModal={handleOnOpenModal}
+                    modalIsOpen={state.modalIsOpen}
+                    deleteBadge={handleDeleteBadge}
+                    data={state.data}>
                     </Actions>
                 </div>
             </div>
