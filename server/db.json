@@ -57,20 +57,28 @@
       "id": 7
     },
     {
-      "firstName": "Hannah",
-      "lastName": "Sangre",
-      "email": "Hannah@yopmail.com",
-      "jobTitle": "Agricultora",
-      "twitter": "@hannah",
-      "id": 8
-    },
-    {
       "firstName": "Facundo",
       "lastName": "Suarez",
       "email": "elfacux@gmail.com",
       "jobTitle": "Medicina",
       "twitter": "@facuci",
       "id": 9
+    },
+    {
+      "firstName": "Gustavo",
+      "lastName": "Di Pietro",
+      "email": "gusjajaja@gmail.com",
+      "jobTitle": "Chef",
+      "twitter": "@jajaja",
+      "id": 10
+    },
+    {
+      "firstName": "Nicolas",
+      "lastName": "Torres",
+      "email": "elniqui@gmail.com",
+      "jobTitle": "DIseñador Grafico",
+      "twitter": "@hoonvel",
+      "id": 11
     }
   ]
 }

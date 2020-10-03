@@ -1,11 +1,32 @@
+@import '../variables/variables.scss';
+
 .container {
+
     .container-filter {
         display:flex;
         justify-content: start;
+        label {
+            font-weight: map-get($font-weight, medium);
+            font-size: map-get($font-size--text, medium);
+        }
         input {
+            font-weight: map-get($font-weight, regular);
+            font-size: map-get($font-size--text, min);
             margin-left:20px;
         }
     }
+    
+    .container__notFound {
+        h3 {
+            font-weight: map-get($font-weight, medium);
+            font-size: map-get($font-size--title, medium);
+        }   
+        .btn {
+            font-weight:map-get($font-weight, bold);
+            font-size:map-get($font-size--text, medium);
+        }
+    }
+
     .Card {
         padding:0;
         margin:30px 0px;
@@ -23,18 +44,22 @@
                     width:150px;
                 }
         }
+
         .Card__text {
             h4 {
                 color:black;
-                font-weight: 800;
+                font-weight: map-get($font-weight, bold);
+                font-size:map-get($font-size--title, max);
             }
             h5 {
                 color:black;
-                font-weight: 500;
+                font-weight: map-get($font-weight, medium);
+                font-size: map-get($font-size--title, medium);
             }
             p {
                 color:black;
-                font-weight: 400;
+                font-weight: map-get($font-weight, regular);
+                font-size: map-get($font-size--text, min);
             }
         }
     }

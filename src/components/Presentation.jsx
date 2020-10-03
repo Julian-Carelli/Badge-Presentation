@@ -31,15 +31,14 @@ const Presentation = ({state}) => (
                 <h2 className="text-white">Badges Recientes</h2>
                 {state.map(badge => 
                     <Link className="text-reset text-decoration-none" key={badge.id} to={`/badges/${badge.id}`}>
-                        <div className="Card bg-white mb-2">
+                        <div className="Card">
                             <div className="Card__img">
                                 <Gravatar email={badge.email} alt="Avatar"></Gravatar>
                             </div>
                             <div className="Card__text">
                                 <h4>{badge.firstName} {badge.lastName}</h4>
-                                <h5>{badge.jobTitle}</h5>
+                                <h6>{badge.jobTitle}</h6>
                                 <p>{badge.email}</p>
-                                <span>{badge.twitter}</span>
                             </div>
                         </div>
                     </Link>

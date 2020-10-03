@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .Redirection {
     padding: 40px 0px;
     width: 100%;
@@ -7,12 +9,15 @@
             display:flex;
             justify-content: center;
             h2 {
+                font-weight:map-get($font-weight, bold);
+                font-size:map-get($font-size--title, medium);
                 margin:0px 20px;
 
             }
             .btn {
+                font-weight:map-get($font-weight, bold);
+                font-size:map-get($font-size--text, medium);
                 margin:0px 20px;
-
             }
         }
     }

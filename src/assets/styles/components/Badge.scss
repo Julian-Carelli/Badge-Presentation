@@ -1,9 +1,12 @@
+@import '../variables/variables.scss';
+
 .Badge {
     background: #ffffff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
     border-radius: 8px 8px 8px 8px;
     overflow: hidden;
-    height: 380px;
+    max-height: 400px;
+    height: 100%;
     margin:60px 0px;
 
     .Badge__header {
@@ -25,6 +28,10 @@
             width: 120px;
             height: 120px;
         }
+        h1 {
+            font-weight: map-get($font-weight, bold);
+            font-size:map-get($font-size--title, max);
+        }
 
     }
     .Badge__section--profesion {
@@ -34,6 +41,14 @@
         align-items: center;
         padding: 0.5rem 0;
         background: #f4f4f7;
+        p {
+            font-weight: map-get($font-weight, regular);
+            font-size: map-get($font-size--text, medium);
+        }
+        span {
+            font-weight: map-get($font-weight, regular );
+            font-size: map-get($font-size--text, min);
+        }
 
     }
     .Badge__section--platziConf {

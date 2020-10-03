@@ -33,7 +33,7 @@ const Card = ({state}) => {
             <>
                 
                 <div className="container">
-                    <div className="form-group">
+                    <div className="container-filter form-group">
                         <label>Filtrar Badges</label>
                         <input 
                         className="form-group" 
@@ -43,10 +43,13 @@ const Card = ({state}) => {
                             setQuery(e.target.value)
                         }}></input>
                     </div>
-                    <h3>No Encontre ningun badge seleccionado</h3>
-                    <Link to="/badges/new">
-                        <button className="btn btn-primary">Crea tu primer Badge</button>
-                    </Link>
+                    <div className="container__notFound">
+                        <h3>No Encontre ningun badge seleccionado</h3>
+                        <Link to="/badges/new">
+                            <button className="btn btn-primary">Crea tu primer Badge</button>
+                        </Link>
+                    </div>
+                    
                 </div>
             </>
         )
@@ -54,7 +57,7 @@ const Card = ({state}) => {
 
     return(
         <div className="container">
-            <div className="form-group container-filter">
+            <div className="container-filter form-group">
                 <label>Filtrar Badges</label>
                 <input 
                 className="form-group" 

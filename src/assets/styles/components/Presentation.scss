@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .Presentation {
     background: url('../../images/stars.svg'), #1b1b25;
     width: 100%;
@@ -5,77 +7,93 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    padding:0px;
     .Presentation-row{
         align-items: center;
+        padding:0px;
         .Presentation__img {
             display: flex;
             justify-content: center;
             margin:auto;
             padding:0px;
             img {
-                width: 800px;
+                width: 100%;
+                max-width: 400px;
             }
         }
         .Presentation__text {
            h1 {
                 color:white;
-                font-weight: 700;
+                font-weight: map-get($font-weight, extra-bold);
+                font-size: map-get($font-size--title, max);
            }
            .Presentation__text--info {
                p{
                     color:white;
-                    font-weight: 400;
+                    font-weight: map-get($font-weight, regular);
+                    font-size: map-get($font-size--text, max);
                 }
                .btn {
-
+                    color:white;
+                    font-weight: map-get($font-weight, regular);
+                    font-size:map-get($font-size--text, medium);
                }
            }
         }
 
         .Presentation__recents {
+            margin-top: 80px;
             h2 {
                 color:white;
-                font-weight: 700;
+                font-weight: map-get($font-weight, bold);
+                font-size: map-get($font-size--title, max);
+
             }
             .Card {
                 display:flex;
                 align-items: center;
-                max-width:450px;
-                padding:20px;
-                width:100%;
-                height:200px;
+                width:450px;
                 border-radius: 5px;
                 box-sizing: border-box;
                 text-align: start;
+                margin:20px 0px;
+                background-color: #1C3643;
+                overflow: hidden;
                 .Card__img {
                     display:flex;
                     align-items: center;
                     justify-content: space-around;
-                    width:50%;
+                    width:30%;
                     height: 100%;
                 }
                 .Card__text {
                     display:flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    width:50%;
+                    width:70%;
                     height:100%;
+                    line-height: 30px;
+                    padding:15px 0px;
                     h4 {
-                        color:black;
-                        font-weight: 800;
+                        color:white;
+                        font-weight: map-get($font-weight, bold);
+                        font-size:map-get($font-size--title, min);
                     }
-                    h5 {
-                        color:black;
-                        font-weight:500;
+                    h6 {
+                        color:white;
+                        font-weight:map-get($font-weight, medium);
+                        font-size:map-get($font-size--text, medium);
                     }
                     p {
-                        color:black;
-                        font-weight: 400;
+                        color:white;
+                        font-weight: map-get($font-weight, regular);
+                        font-size:map-get($font-size--text, min);
                     }
 
                     span {
-                        color:black;
-                        font-weight: 400;
+                        color:white;
+                        font-weight: map-get($font-weight, regular);
+                        font-size:map-get($font-size--text, min);
                     }
                 }
             }

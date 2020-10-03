@@ -1,3 +1,5 @@
+@import '../variables/variables.scss';
+
 .title {
     padding:10px 0px;
     h1 {
@@ -9,5 +11,19 @@
     padding:10px 0px;
     .form__block {
         padding:3px 0px;
+        label {
+            font-weight: map-get($font-weight, regular);
+            font-size:map-get($font-size--text, medium);
+        }
+        input {
+            font-weight: map-get($font-weight, regular);
+            font-size:map-get($font-size--text, min);
+        }
+    }
+    .form__button {
+        .btn {
+            font-weight: map-get($font-weight, regular);
+            font-size:map-get($font-size--text, regular);
+        }
     }
 }

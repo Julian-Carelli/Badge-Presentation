@@ -32,7 +32,9 @@ const BadgeForm = ({onChange, onSubmit, data, error, title}) => (
                 <label>Twitter</label>
                 <input type="text" required onChange={onChange} maxLength="10" value={data.twitter} placeholder="Twitter" name="twitter" className="form-control"></input>
             </div>
-            <button className="btn btn-primary">Agregar presentacion</button>
+            <div className="form__button">
+                <button className="btn btn-primary">Agregar presentacion</button>
+            </div>
             {error && 
                 <p className="text-danger">{error.message}</p>
             }

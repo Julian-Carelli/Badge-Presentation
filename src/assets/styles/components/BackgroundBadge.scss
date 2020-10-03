@@ -1,8 +1,18 @@
-.BackgroundBadge {
+@import '../variables/variables.scss';
+
+.backgroundBadge {
     width: 100%;
     padding: 2rem 0;
     background: url("../../images/stars.svg"), #1b1b25;
     background-repeat: repeat;
     margin-bottom: 1rem;
     color: #ffffff;
+    .backgroundBadge-row {
+        .backgroundBadge__title {
+            h1 {
+                font-weight: map-get($font-weight, bold);
+                font-size: map-get($font-size--title, max);
+            }
+        }
+    }
 }

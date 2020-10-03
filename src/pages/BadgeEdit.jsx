@@ -13,7 +13,7 @@ import '../assets/styles/pages/BadgeEdit.scss'
 const BadgeEdit = ({state, handleOnChange, handleOnSubmit}) => (
 
     <>
-        <Background title="Editar Presentacion"></Background>
+        <Background data={state.data}></Background>
         <div className="badgeEdit container">
             <div className="badgeEdit-row row">
                 <div className="badgeEdit__badge col-6">

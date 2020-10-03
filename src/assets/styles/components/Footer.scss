@@ -2,8 +2,9 @@
     width:100%;
     display:flex;
     justify-content: center;
-    height: 100%;
-    padding: 31px 0px;
+    align-items: center;
+    height: 130px;
+    box-sizing: border-box;
     background: url('../../images/stars.svg'), #1b1b25;
     .Footer-row {
         .Footer__icon {

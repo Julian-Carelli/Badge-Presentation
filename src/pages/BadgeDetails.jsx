@@ -8,12 +8,16 @@ import BackgroundBadge from '../components/BackgroundBadge'
 import Badge from '../components/Badge'
 import Actions from '../components/Actions'
 
+//Assets
+
+import '../assets/styles/pages/BadgeDetails.scss'
+
 const BadgeDetails = ({state, handleOnCloseModal, handleDeleteBadge, handleOnOpenModal}) => (
     <>
         <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
+        <div className="BadgeDetails container">
+            <div className="BadgeDetails-row row">
+                <div className="BadgeDetails__badge col-12">
                     <Badge data={state.data}></Badge>
                 </div>
             </div>

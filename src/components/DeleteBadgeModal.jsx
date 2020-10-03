@@ -14,8 +14,8 @@ const DeleteBadgeModal = ({isOpen, onClose, deleteBadge}) => (
             <p>Estas a punto de eliminar este badge</p>
         </div>
         <div>
-            <button onClick={onClose} className="btn btn-primary mr-4">Cancelar</button>
-            <button onClick={deleteBadge} className="btn btn-danger">Eliminar</button>
+            <button onClick={deleteBadge}  className="btn btn-danger mr-4">Eliminar</button>
+            <button  onClick={onClose} className="btn btn-primary">Cancelar</button>
 
         </div>
 

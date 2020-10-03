@@ -6,13 +6,15 @@ import React from 'react'
 
 import Badge from '../components/Badge'
 import BadgeForm from '../components/BadgeForm'
-import Background from '../components/Background'
+import BackgroundBadge from '../components/BackgroundBadge'
+
+//Assets
 
 import '../assets/styles/pages/BadgeNew.scss'
 
 const BadgeNew = ({state, handleOnChange, handleOnSubmit}) => (
     <>
-        <Background data={state.data}></Background>
+        <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
         <div className="badgeNew container">
             <div className="badgeNew-row row">
                 <div className="badgeNew__badge col-6">
