@@ -1,0 +1,11 @@
+.actions {
+    display:Flex;
+    justify-content: center;
+    margin: 30px 20px;
+    .actions__edit {
+        margin: 0px 20px;
+    }
+    .actions__delete{
+        margin: 0px 20px;
+    }
+}

@@ -36,7 +36,7 @@ const Presentation = ({state}) => (
                                 <Gravatar email={badge.email} alt="Avatar"></Gravatar>
                             </div>
                             <div className="Card__text">
-                                <h2>{badge.firstName} {badge.lastName}</h2>
+                                <h4>{badge.firstName} {badge.lastName}</h4>
                                 <h5>{badge.jobTitle}</h5>
                                 <p>{badge.email}</p>
                                 <span>{badge.twitter}</span>

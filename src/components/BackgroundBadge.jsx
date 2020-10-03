@@ -11,10 +11,7 @@ const BackgroundBadge = ({firstName, lastName}) => (
 
     <div className="container-fluid BackgroundBadge">
         <div className="row">
-            <div className="col-6">
-                <img className="BadgeNew__hero--img img-fluid" src={Header} alt="Header de la conferencia"></img>
-            </div>
-            <div className="col-6">
+            <div className="col-12 text-center">
                 <h1>{firstName} {lastName}</h1>
             </div>
         </div>

@@ -6,8 +6,11 @@
         color: #ffffff;
         display: flex;
         align-items: center;
-        .Navbar__brand-logo {
-            margin-right: 0.5rem;
+        .Navbar__brand--logo {
+            margin:0px 10px;
+            font-size:1.7em;
+            padding:9px 0px;
+            color:greenyellow;
           }
       }
   }

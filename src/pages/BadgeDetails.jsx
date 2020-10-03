@@ -11,12 +11,14 @@ import Actions from '../components/Actions'
 const BadgeDetails = ({state, handleOnCloseModal, handleDeleteBadge, handleOnOpenModal}) => (
     <>
         <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
-        <div className="container-fluid">
+        <div className="container">
             <div className="row">
-                <div className="col-6">
+                <div className="col-12">
                     <Badge data={state.data}></Badge>
                 </div>
-                <div className="col-6">
+            </div>
+            <div className="row">
+                <div className="col-12 text-center">
                     <Actions 
                     onCloseModal={handleOnCloseModal} 
                     onOpenModal={handleOnOpenModal}

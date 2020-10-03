@@ -63,6 +63,14 @@
       "jobTitle": "Agricultora",
       "twitter": "@hannah",
       "id": 8
+    },
+    {
+      "firstName": "Facundo",
+      "lastName": "Suarez",
+      "email": "elfacux@gmail.com",
+      "jobTitle": "Medicina",
+      "twitter": "@facuci",
+      "id": 9
     }
   ]
 }

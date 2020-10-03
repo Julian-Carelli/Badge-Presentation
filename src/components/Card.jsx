@@ -71,8 +71,8 @@ const Card = ({state}) => {
                             <Gravatar email={state.email} alt="Avatar"></Gravatar>
                         </div>
                         <div className="col-6 Card__text text-dark">
-                            <h2>{state.firstName} {state.lastName}</h2>
-                            <h3>{state.jobTitle}</h3>
+                            <h4>{state.firstName} {state.lastName}</h4>
+                            <h5>{state.jobTitle}</h5>
                             <p>{state.email}</p>
                             <p>{state.twitter}</p>
                         </div>
