@@ -1,66 +1,71 @@
 @import '../variables/variables.scss';
 
-.container {
-
-    .container-filter {
-        display:flex;
-        justify-content: start;
-        label {
-            font-weight: map-get($font-weight, medium);
-            font-size: map-get($font-size--text, medium);
-        }
-        input {
-            font-weight: map-get($font-weight, regular);
-            font-size: map-get($font-size--text, min);
-            margin-left:20px;
-        }
-    }
-    
-    .container__notFound {
-        h3 {
-            font-weight: map-get($font-weight, medium);
-            font-size: map-get($font-size--title, medium);
-        }   
-        .btn {
-            font-weight:map-get($font-weight, bold);
-            font-size:map-get($font-size--text, medium);
-        }
-    }
-
-    .Card {
-        padding:0;
-        margin:30px 0px;
+body {
+    .container {
         width:100%;
-        display: flex;
-        justify-content: center;
-        padding: 40px 120px; 
-        border-radius: 5px;
-        border:2px solid black;
-            
-        .Card__img {
-            padding:0;
-            margin:auto;
-                img {
-                    width:150px;
-                }
-        }
-
-        .Card__text {
-            h4 {
-                color:black;
-                font-weight: map-get($font-weight, bold);
-                font-size:map-get($font-size--title, max);
-            }
-            h5 {
-                color:black;
+        .container-filter {
+            display:flex;
+            justify-content: start;
+            color:white;
+            label {
                 font-weight: map-get($font-weight, medium);
-                font-size: map-get($font-size--title, medium);
+                font-size: map-get($font-size--text, medium);
             }
-            p {
-                color:black;
+            input {
                 font-weight: map-get($font-weight, regular);
                 font-size: map-get($font-size--text, min);
+                margin-left:20px;
             }
+        }
+        
+        .container__notFound {
+            h3 {
+                font-weight: map-get($font-weight, medium);
+                font-size: map-get($font-size--title, medium);
+                color:white;
+            }   
+            .btn {
+                font-weight:map-get($font-weight, bold);
+                font-size:map-get($font-size--text, medium);
+            }
+        }
+    
+        .Card {
+            padding:0;
+            margin:30px 0px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            padding: 40px 120px; 
+            border-radius: 5px;
+            background-color: #1C3643;
+                
+            .Card__img {
+                padding:0;
+                margin:auto;
+                    img {
+                        width:150px;
+                    }
+            }
+    
+            .Card__text {
+                h4 {
+                    color:white;
+                    font-weight: map-get($font-weight, bold);
+                    font-size:map-get($font-size--title, medium);
+                }
+                h5 {
+                    color:white;
+                    font-weight: map-get($font-weight, medium);
+                    font-size: map-get($font-size--title, min);
+                }
+                p {
+                    color:white;
+                    font-weight: map-get($font-weight, regular);
+                    font-size: map-get($font-size--text, min);
+                }
+            }
+            
         }
     }
 }

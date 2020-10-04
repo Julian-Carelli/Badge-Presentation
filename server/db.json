@@ -79,6 +79,14 @@
       "jobTitle": "DIseñador Grafico",
       "twitter": "@hoonvel",
       "id": 11
+    },
+    {
+      "firstName": "Elias",
+      "lastName": "Lataste",
+      "email": "elLastas@gmail.com",
+      "jobTitle": "Periodismo",
+      "twitter": "@latas",
+      "id": 12
     }
   ]
 }
