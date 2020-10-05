@@ -1,0 +1,19 @@
+@import '../variables/variables.scss';
+
+.DeleteBadgeModal__message{
+    .DeleteBadgeModal__title {
+        font-weight: map-get($font-weight, bold);
+        font-size:map-get($font-size--title, max);
+    }
+    .DeleteBadgeModal__text {
+        font-weight: map-get($font-weight, medium);
+        font-size:map-get($font-size--text, medium);
+    }
+}
+.DeleteBadgeModal__actions {
+    .DeleteBadgeModal__button {
+        &:hover {
+            opacity:0.9;
+        }
+    }
+}

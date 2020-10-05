@@ -13,15 +13,15 @@ import '../assets/styles/components/Actions.scss'
 
 const Actions = ({data, onOpenModal, deleteBadge, onCloseModal, modalIsOpen}) => (
     <>
-        <h2>Acciones</h2>
-        <div className="actions">
-            <div className="actions__edit">
+        <h2 className="title">Acciones</h2>
+        <div className="Actions">
+            <div className="Actions__edit">
                 <Link to={`/badges/${data.id}/edit`}>
-                    <button className="btn btn-warning mb-4">Editar</button>
+                    <button className="Actions__button btn btn-warning mb-4">Editar</button>
                 </Link>
             </div>
-            <div className="actions__delete">
-                <button onClick={onOpenModal} className="btn btn-danger">Eliminar</button>
+            <div className="Actions__delete">
+                <button onClick={onOpenModal} className="Actions__button btn btn-danger">Eliminar</button>
                 <DeleteBadgeModal deleteBadge={deleteBadge} onClose={onCloseModal} isOpen={modalIsOpen}></DeleteBadgeModal>
             </div>
         </div>

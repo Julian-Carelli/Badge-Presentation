@@ -3,28 +3,28 @@
 body {
     .container {
         width:100%;
-        .container-filter {
+        &__filter {
             display:flex;
             justify-content: start;
             color:white;
-            label {
+            .container__label {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--text, medium);
             }
-            input {
+            .container__input {
                 font-weight: map-get($font-weight, regular);
                 font-size: map-get($font-size--text, min);
                 margin-left:20px;
             }
         }
         
-        .container__notFound {
-            h3 {
+        &__notFound {
+            .container__title {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--title, medium);
                 color:white;
             }   
-            .btn {
+            .container__button {
                 font-weight:map-get($font-weight, bold);
                 font-size:map-get($font-size--text, medium);
             }
@@ -40,7 +40,7 @@ body {
             border-radius: 5px;
             background-color: #1C3643;
                 
-            .Card__img {
+            &__img {
                 padding:0;
                 margin:auto;
                     img {
@@ -48,18 +48,18 @@ body {
                     }
             }
     
-            .Card__text {
-                h4 {
+            &__text {
+                .Card__title-primary {
                     color:white;
                     font-weight: map-get($font-weight, bold);
                     font-size:map-get($font-size--title, medium);
                 }
-                h5 {
+                .Card__title-secondary {
                     color:white;
                     font-weight: map-get($font-weight, medium);
                     font-size: map-get($font-size--title, min);
                 }
-                p {
+                .Card__text {
                     color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, min);

@@ -1,10 +1,8 @@
-.badgeNew {
+.BadgeNew {
     margin-top: 25px;
-    .badgeNew-row {
-        .badgeNew__badge {
+    .BadgeNew-row {
+        &__badge {
             margin: auto;
-        }
-        .badgeEdit__form {
         }
     }
 }

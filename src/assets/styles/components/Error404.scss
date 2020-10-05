@@ -6,25 +6,25 @@
     padding:0;
     margin:auto;
     display: flex;
-    .Error404-row {
+    &__row {
         width:100%;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         line-height: 60px;
         margin:auto;
-        .Error404__col {
-            .Error404__col--img {
-                img {
+        .Error404-content {
+            &__background {
+                .Error404-content__img {
                     width:400px;
                 }
             }
-            .Error404__col--info {
-                p {
+            &__info {
+                .Error404-content__text {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
                 }
-                .btn {
+                .Error404-content__button {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
                 }

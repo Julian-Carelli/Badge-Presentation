@@ -13,32 +13,32 @@ import Astronauts from '../assets/images/astronauts.svg'
 import '../assets/styles/components/Presentation.scss'
 
 const Presentation = ({state}) => (
-    <div className="container-fluid Presentation">
-        <div className="row Presentation-row">
-            <div className="col-4 Presentation__img">
-                <img src={Astronauts} alt="Imagen de conferencia"></img>
+    <div className="Presentation container-fluid">
+        <div className="Presentation__row row">
+            <div className="Presentation-background col-4">
+                <img className="Presentation-background__img" src={Astronauts} alt="Imagen de conferencia"></img>
             </div>
-            <div className="col-4 Presentation__text">
-                <h1>Platzi Conf</h1>
-                <div className="Presentation__text--info">
-                    <p>Crea tu Badge personalizado</p>
+            <div className="Presentation-content col-4">
+                <h1 className="Presentation-content__title">Platzi Conf</h1>
+                <div className="Presentation-content__info">
+                    <p className="Presentation-content__text">Crea tu Badge personalizado</p>
                     <Link to="/badges/new">
-                        <button className="btn btn-primary">Nuevo Badge</button>
+                        <button className="Presentation-content__btn btn btn-primary">Nuevo Badge</button>
                     </Link>
                 </div>
             </div>
-            <div className="col-4 Presentation__recents">
-                <h2 className="text-white">Badges Recientes</h2>
+            <div className="Presentation-recents col-4">
+                <h2 className="Presentation-recents__title text-white">Badges Recientes</h2>
                 {state.map(badge => 
                     <Link className="text-reset text-decoration-none" key={badge.id} to={`/badges/${badge.id}`}>
                         <div className="Card">
                             <div className="Card__img">
                                 <Gravatar email={badge.email} alt="Avatar"></Gravatar>
                             </div>
-                            <div className="Card__text">
-                                <h4>{badge.firstName} {badge.lastName}</h4>
-                                <h6>{badge.jobTitle}</h6>
-                                <p>{badge.email}</p>
+                            <div className="Card__info">
+                                <h4 className="Card__title-primary">{badge.firstName} {badge.lastName}</h4>
+                                <h6 className="Card__title-secondary">{badge.jobTitle}</h6>
+                                <p className="Card__text">{badge.email}</p>
                             </div>
                         </div>
                     </Link>

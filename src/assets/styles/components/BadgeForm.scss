@@ -1,27 +1,27 @@
 @import '../variables/variables.scss';
 
-.title {
+.Badge-presentation {
     padding:10px 0px;
-    h1 {
+    &__title {
         font-weight: 800;
     }
 }
 
-.form {
+.Badge-form {
     padding:10px 0px;
-    .form__block {
+    &__block {
         padding:3px 0px;
-        label {
+        .Badge-form__label {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, medium);
         }
-        input {
+        .Badge-form__input {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, min);
         }
     }
-    .form__button {
-        .btn {
+    &__button {
+        .Badge-form__button {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, regular);
         }

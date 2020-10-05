@@ -16,13 +16,13 @@ const BadgeDetails = ({state, handleOnCloseModal, handleDeleteBadge, handleOnOpe
     <>
         <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
         <div className="BadgeDetails container">
-            <div className="BadgeDetails-row row">
+            <div className="BadgeDetails__row row">
                 <div className="BadgeDetails__badge col-12">
                     <Badge data={state.data}></Badge>
                 </div>
             </div>
-            <div className="row">
-                <div className="col-12 text-center">
+            <div className="BadgeDetails__row">
+                <div className="BadgeDetails__actions col-12 text-center">
                     <Actions 
                     onCloseModal={handleOnCloseModal} 
                     onOpenModal={handleOnOpenModal}

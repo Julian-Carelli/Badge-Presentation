@@ -9,12 +9,12 @@ import '../assets/styles/components/Navbar.scss'
 
 const Navbar = () => (
     <div className="Navbar">
-        <div className="Navbar__brand">
+        <div className="Navbar-brand">
             <Link to="/">
-                <i className="Navbar__brand--logo fas fa-home"></i>
+                <i className="Navbar-brand__icon fas fa-home"></i>
             </Link>
-            <span className="font-weight-light">Platzi</span>
-            <span className="font-weight-bold">Conf</span>
+            <span className="Navbar-brand__name font-weight-light">Platzi</span>
+            <span className="Navbar-brand__name font-weight-bold">Conf</span>
         </div> 
     </div>
 )

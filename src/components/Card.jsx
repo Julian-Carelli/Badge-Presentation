@@ -12,7 +12,6 @@ import Gravatar from '../components/Gravatar'
 import '../assets/styles/components/Card.scss'
 
 
-
 const Card = ({state}) => {
 
 
@@ -33,10 +32,10 @@ const Card = ({state}) => {
             <>
                 
                 <div className="container">
-                    <div className="container-filter form-group">
-                        <label>Filtrar Badges</label>
+                    <div className="container__filter form-group">
+                        <label className="container__label">Filtrar Badges</label>
                         <input 
-                        className="form-group" 
+                        className="container__input form-group" 
                         type="text"
                         value={query}
                         onChange={(e) => {
@@ -46,7 +45,7 @@ const Card = ({state}) => {
                     <div className="container__notFound">
                         <h3>No Encontre ningun badge seleccionado</h3>
                         <Link to="/badges/new">
-                            <button className="btn btn-primary">Crea tu primer Badge</button>
+                            <button className="container__button btn-primary">Crea tu primer Badge</button>
                         </Link>
                     </div>
                     
@@ -57,10 +56,10 @@ const Card = ({state}) => {
 
     return(
         <div className="container">
-            <div className="container-filter form-group">
-                <label>Filtrar Badges</label>
+            <div className="container__filter form-group">
+                <label className="container__label">Filtrar Badges</label>
                 <input 
-                className="form-group" 
+                className="container__input form-group" 
                 type="text"
                 value={query}
                 onChange={(e) => {
@@ -69,15 +68,15 @@ const Card = ({state}) => {
             </div>
             {filteredBadges.map(state => 
                 <Link className="text-reset text-decoration-none" key={state.id} to={`/badges/${state.id}`}>
-                    <div  className="row Card">
-                        <div className="col-6 Card__img">
+                    <div className="Card row">
+                        <div className="Card__img col-6">
                             <Gravatar email={state.email} alt="Avatar"></Gravatar>
                         </div>
-                        <div className="col-6 Card__text text-dark">
-                            <h4>{state.firstName} {state.lastName}</h4>
-                            <h5>{state.jobTitle}</h5>
-                            <p>{state.email}</p>
-                            <p>{state.twitter}</p>
+                        <div className="Card__text text-dark col-6">
+                            <h4 className="Card__title-primary">{state.firstName} {state.lastName}</h4>
+                            <h5 className="Card__title-secondary">{state.jobTitle}</h5>
+                            <p className="Card__text">{state.email}</p>
+                            <p className="Card__text">{state.twitter}</p>
                         </div>
                     </div>
                 </Link>

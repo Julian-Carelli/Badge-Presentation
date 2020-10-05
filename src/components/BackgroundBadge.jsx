@@ -8,10 +8,10 @@ import '../assets/styles/components/BackgroundBadge.scss'
 
 const BackgroundBadge = ({firstName, lastName}) => (
 
-    <div className="container-fluid backgroundBadge">
-        <div className="backgroundBadge-row row">
-            <div className="backgroundBadge__title col-12 text-center">
-                <h1>{firstName} {lastName}</h1>
+    <div className="BackgroundBadge container-fluid">
+        <div className="BackgroundBadge-row row">
+            <div className="BackgroundBadge-row__info col-12 text-center">
+                <h1 className="BackgroundBadge-row__title">{firstName} {lastName}</h1>
             </div>
         </div>
     </div>

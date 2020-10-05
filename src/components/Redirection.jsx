@@ -8,12 +8,12 @@ import {Link} from 'react-router-dom'
 import '../assets/styles/components/Redirection.scss'
 
 const Redirection = () => (
-    <div className="container Redirection">
-        <div className="row Redirection-row">
-            <div className="col-12 Redirection__text">
-                <h2>Lista de Badges</h2>
+    <div className="Redirection container ">
+        <div className="Redirection-row row">
+            <div className="Redirection-row__text col-12 ">
+                <h2 className="Redirection-row__title">Lista de Badges</h2>
                 <Link to="/badges/new">
-                    <button className="btn btn-primary">Crear Badge</button>
+                    <button className="Redirection-row__button btn btn-primary">Crear Badge</button>
                 </Link>
             </div>
         </div>

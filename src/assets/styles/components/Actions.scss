@@ -1,25 +1,31 @@
 @import '../variables/variables.scss';
 
-h2 {
+.title {
     font-weight: map-get($font-weight, bold);
     font-size: map-get($font-size--title, max);
 }
-.actions {
+.Actions {
     display:Flex;
     justify-content: center;
     margin: 30px 20px;
-    .actions__edit {
+    &__edit {
         margin: 0px 20px;
-        .btn {
+        .Actions__button {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, min);
+            &:hover {
+                opacity: 0.8;
+            }
         }
     }
-    .actions__delete{
+    &__delete{
         margin: 0px 20px;
-        .btn {
+        .Actions__button {
             font-weight: map-get($font-weight, regular);
-            font-size:map-get($font-size--text, min)
+            font-size:map-get($font-size--text, min);
+            &:hover {
+                opacity:0.9;
+            }
         }
     }
 }

@@ -9,30 +9,30 @@
     padding-left:0px;
     padding-right: 0px;
     background-color: white;
-    .Error500-row {
+    &__row {
         width:100%;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         line-height: 60px;
         margin:auto;
-        .Error500__col {
-            h1 {
-                font-weight: map-get($font-weight, medium);
-                font-size: map-get($font-size--title, max);
-            }
-            .Error500__col--img {
-                img {
+        .Error500-content {
+            &__background {
+                .Error500-content__img {
                     max-width: 400px;
                     width: 100%;
                 }
             }
-            .Error500__col--info {
-                p{
+            &__title {
+                font-weight: map-get($font-weight, medium);
+                font-size: map-get($font-size--title, max);
+            }
+            &__info {
+                .Error500-content__text{
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, medium)
                 }
-                .btn {
+                .Error500-content__button {
                     margin-bottom:40px;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);

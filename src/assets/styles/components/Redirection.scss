@@ -5,17 +5,16 @@
     width: 100%;
    
     .Redirection-row {
-        .Redirection__text {
+        &__text {
             display:flex;
             justify-content: center;
-            h2 {
+            .Redirection-row__title {
                 font-weight:map-get($font-weight, bold);
                 font-size:map-get($font-size--title, medium);
                 margin:0px 20px;
                 color:white;
-
             }
-            .btn {
+            .Redirection-row__button {
                 font-weight:map-get($font-weight, bold);
                 font-size:map-get($font-size--text, medium);
                 margin:0px 20px;

@@ -1,10 +1,8 @@
 .badgeEdit {
     margin-top: 25px;
     .badgeEdit-row {
-        .badgeEdit__badge {
+        &__badge {
             margin: auto;
-        }
-        .badgeEdit__form {
         }
     }
 }

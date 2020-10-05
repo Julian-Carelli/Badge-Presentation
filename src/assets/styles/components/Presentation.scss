@@ -8,42 +8,45 @@
     align-items: center;
     justify-content: center;
     padding:0px;
-    .Presentation-row{
+    &__row{
         align-items: center;
         padding:0px;
-        .Presentation__img {
+        .Presentation-background {
             display: flex;
             justify-content: center;
             margin:auto;
             padding:0px;
-            img {
+            &__img {
                 width: 100%;
                 max-width: 400px;
             }
         }
-        .Presentation__text {
-           h1 {
+        .Presentation-content {
+           &__title {
                 color:white;
                 font-weight: map-get($font-weight, extra-bold);
                 font-size: map-get($font-size--title, max);
            }
-           .Presentation__text--info {
-               p{
+           &__info {
+               .Presentation-content__text {
                     color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, max);
                 }
-               .btn {
+                .Presentation-content__btn{
                     color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, medium);
+                    &:hover {
+                        opacity:0.9;
+                    }
                }
            }
         }
 
-        .Presentation__recents {
+        .Presentation-recents {
             margin-top: 80px;
-            h2 {
+            &__title{
                 color:white;
                 font-weight: map-get($font-weight, bold);
                 font-size: map-get($font-size--title, max);
@@ -59,14 +62,17 @@
                 margin:20px 0px;
                 background-color: #1C3643;
                 overflow: hidden;
-                .Card__img {
+                &:hover {
+                    opacity:0.7;
+                }
+                &__img {
                     display:flex;
                     align-items: center;
                     justify-content: space-around;
                     width:30%;
                     height: 100%;
                 }
-                .Card__text {
+                &__info {
                     display:flex;
                     flex-direction: column;
                     justify-content: space-around;
@@ -74,23 +80,17 @@
                     height:100%;
                     line-height: 30px;
                     padding:15px 0px;
-                    h4 {
+                    .Card__title-primary {
                         color:white;
                         font-weight: map-get($font-weight, bold);
                         font-size:map-get($font-size--title, min);
                     }
-                    h6 {
+                    .Card__title-secondary{
                         color:white;
                         font-weight:map-get($font-weight, medium);
                         font-size:map-get($font-size--text, medium);
                     }
-                    p {
-                        color:white;
-                        font-weight: map-get($font-weight, regular);
-                        font-size:map-get($font-size--text, min);
-                    }
-
-                    span {
+                    .Card__text {
                         color:white;
                         font-weight: map-get($font-weight, regular);
                         font-size:map-get($font-size--text, min);

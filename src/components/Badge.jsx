@@ -14,23 +14,23 @@ import '../assets/styles/components/Badge.scss'
 const Badge = ({data}) => (
 
     <div className="Badge" key={data.id}>
-        <div className="Badge__header">
-            <img src={Logo} alt="Logo de la conferencia"></img>
+        <div className="Badge__background">
+            <img className="Badge__img" src={Logo} alt="Logo de la conferencia"></img>
         </div>
-        <div className="Badge__section--name">
+        <div className="Badge__email">
             <Gravatar className="Badge__avatar"
             email={data.email || 'example@example.com'}
             alt="Avatar"
             />
-            <h1>{data.firstName} <br/> {data.lastName} </h1>
+            <h1 className="Badge__title">{data.firstName} <br/> {data.lastName} </h1>
         </div>
-        <div className="Badge__section--profesion">
-            <p>{data.email}</p>
-            <p>{data.jobTitle}</p>
-            <div>{data.twitter}</div>
+        <div className="Badge__profesion">
+            <p className="Badge__text">{data.email}</p>
+            <p className="Badge__text">{data.jobTitle}</p>
+            <div className="Badge__span">{data.twitter}</div>
         </div>
-        <div className="Badge__section--platziConf">
-            <p>#PlatziConf</p>
+        <div className="Badge__platziConf">
+            <p className="Badge__text">#PlatziConf</p>
         </div>
     </div>
 )

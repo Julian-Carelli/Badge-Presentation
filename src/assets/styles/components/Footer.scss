@@ -6,16 +6,20 @@
     height: 130px;
     box-sizing: border-box;
     background: url('../../images/stars.svg'), #1b1b25;
-    .Footer-row {
-        .Footer__icon {
-            a {
+    &__row {
+        .Footer-content {
+            &__link {
                 margin: 0px 20px;
                 font-size: 26px;
-                .icon {
+                .Footer-content__icon {
                     font-size: 1.7em;
-                    color:greenyellow
+                    color:greenyellow;
+                    &:hover {
+                        opacity: 0.6;
+                    }
                 }
             }
+            
         }
     }
 }

@@ -12,17 +12,17 @@ import error from '../assets/images/error500.png'
 import '../assets/styles/components/Error500.scss'
 
 const Error500 = () => (
-    <div className="container-fluid pl-0 pr-0 Error500">
-        <div className="row Error500-row bg-white">
-        <div className="col-12 Error500__col">
-                <div className="Error500__col--img">
-                    <img src={error} alt="Imagen Error 500"></img>
+    <div className="Error500 container-fluid pl-0 pr-0 ">
+        <div className="Error500__row bg-white row">
+            <div className="Error500-content col-12 ">
+                <div className="Error500-content__background">
+                    <img className="Error500-content__img" src={error} alt="Imagen Error 500"></img>
                 </div>
-                <h1>Pagina no encontrada</h1>
-                <div className="Error500__col--info">
-                    <p>La pagina que estas buscando no es valida</p>
+                <h1 className="Error500-content__title">Pagina no encontrada</h1>
+                <div className="Error500-content__info">
+                    <p className="Error500-content__text">La pagina que estas buscando no es valida</p>
                     <Link to="/">
-                        <button className="btn btn-primary">Volver al Home</button>
+                        <button className="Error500-content__button btn btn-primary">Volver al Home</button>
                     </Link>
                 </div>
             </div>
