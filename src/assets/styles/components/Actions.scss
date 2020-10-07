@@ -1,9 +1,51 @@
 @import '../variables/variables.scss';
 
-.title {
-    font-weight: map-get($font-weight, bold);
-    font-size: map-get($font-size--title, max);
+
+.Actions {
+    .Actions-menu {        
+        &__presentation {
+            .Actions-menu__title {
+                font-weight: map-get($font-weight, bold);
+                font-size: map-get($font-size--title, max);
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--title, min);
+                }
+            }
+        }
+        &__method {
+            display:flex;
+            justify-content: center;
+            margin:20px 0px;
+            .Actions-menu__edit {
+                margin:0px 20px;
+                .Actions-menu__button {
+                    font-weight: map-get($font-weight, regular);
+                    font-size:map-get($font-size--text, min);
+                    @media screen and(max-width:576px) {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .Actions-menu__delete {
+                margin:0px 20px;
+                .Actions-menu__button {
+                    font-weight: map-get($font-weight, regular);
+                    font-size:map-get($font-size--text, min);
+                    @media screen and(max-width:576px) {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    &:hover {
+                        opacity:0.9;
+                    }
+                }
+            }
+        }
+    }
 }
+
 .Actions {
     display:Flex;
     justify-content: center;
@@ -11,21 +53,13 @@
     &__edit {
         margin: 0px 20px;
         .Actions__button {
-            font-weight: map-get($font-weight, regular);
-            font-size:map-get($font-size--text, min);
-            &:hover {
-                opacity: 0.8;
-            }
+            
         }
     }
     &__delete{
         margin: 0px 20px;
         .Actions__button {
-            font-weight: map-get($font-weight, regular);
-            font-size:map-get($font-size--text, min);
-            &:hover {
-                opacity:0.9;
-            }
+            
         }
     }
 }

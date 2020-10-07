@@ -1,6 +1,13 @@
 .BadgeNew {
     margin-top: 25px;
+    .row {
+        margin:auto;
+    }
     .BadgeNew-row {
+        @media screen and(max-width:576px){
+            display:flex;
+            flex-direction: column;
+        }
         &__badge {
             margin: auto;
         }

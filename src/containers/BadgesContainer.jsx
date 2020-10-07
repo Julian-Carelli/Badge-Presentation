@@ -11,44 +11,46 @@ import Badges from '../pages/Badges'
 
 const BadgesContainer = () => {
 
-    const [state, setState] = useState({
-        loading:true,
-        error:null,
-        data:undefined,
-    })
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    const [data, setData] = useState(undefined)
 
     const fetchData = async () => {
-        setState({loading:true, error:null, data:state.data})
+        setLoading(true)
+        setError(null)
+        setData(data)
 
         try {   
             const data = await api.badges.list()
-            setState({loading:false, data:data})
+            setData(data)
+            setLoading(false)
+
         }
         catch(error){
-
-            setState({loading:false, error:error})
+            setError(error)
+            setLoading(false)
 
         }
     }
+        
 
     useEffect(() => {
-        
         fetchData()
     }, [])
 
     
-    if(state.loading === true) {
+    if(loading === true) {
         return <Loading></Loading>
     }
 
-    if(state.error) {
+    if(error) {
         return <Error500></Error500>
     }
 
 
     return(
         
-        <Badges state={state.data}></Badges>
+        <Badges state={data}></Badges>
 
     )
 }

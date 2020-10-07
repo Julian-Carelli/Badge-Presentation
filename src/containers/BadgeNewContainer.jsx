@@ -11,15 +11,15 @@ import api from '../api'
 
 const BadgeNewContainer = (props) => {
 
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(null)
     const [state, setState] = useState({
-        loading:false,
-        error:null,
         data:{
             firstName:"",
             lastName:"",
-            email:"",   
+            email:"",
             jobTitle:"",
-            twitter:""
+            twitter:"",
         }
     })
 
@@ -33,25 +33,33 @@ const BadgeNewContainer = (props) => {
     }
 
     const handleOnSubmit = async event => {
-        setState({loading:true, error:null, data:state.data})
+
+        setLoading(true)
+        setError(null)
+        setState({...state.data})
+
         event.preventDefault()
 
         try {
             const data = await api.badges.create(state.data)
-            setState({loading:false, error:null, data:data})
+            setState({data:data})
+            setError(null)
+            setLoading(false)
+
             props.history.push('/badges')
 
         }
         catch(error){
-            setState({loading:false, error:error, data:state.data})
+            setError(error)
+            setLoading(false)
         }
     }
 
-    if(state.Loading === true){
+    if(loading === true){
         return <Loading></Loading>
     }
 
-    if(state.error){
+    if(error){
         return <Error500></Error500>
     }
 

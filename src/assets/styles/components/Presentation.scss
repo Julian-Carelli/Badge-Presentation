@@ -11,27 +11,46 @@
     &__row{
         align-items: center;
         padding:0px;
+        
+        
         .Presentation-background {
             display: flex;
             justify-content: center;
             margin:auto;
             padding:0px;
+            @media screen and(max-width:576px) {
+                
+            }
+            
+            
             &__img {
                 width: 100%;
                 max-width: 400px;
+                @media screen and(max-width:576px) {
+                    width:75%;
+                }
             }
         }
         .Presentation-content {
+            @media screen and(max-width:576px){
+                
+            }
            &__title {
                 color:white;
                 font-weight: map-get($font-weight, extra-bold);
                 font-size: map-get($font-size--title, max);
+                @media screen and (max-width:576px){
+                    font-size: map-get($font-size--title, min);
+                }
            }
            &__info {
                .Presentation-content__text {
                     color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, max);
+                    @media screen and (max-width:576px){
+                        font-size: map-get($font-size--text, medium);
+                    }
                 }
                 .Presentation-content__btn{
                     color:white;
@@ -40,22 +59,28 @@
                     &:hover {
                         opacity:0.9;
                     }
+                    @media screen and (max-width:576px){
+                        font-size:map-get($font-size--text, min);
+                    }
                }
            }
         }
 
         .Presentation-recents {
-            margin-top: 80px;
             &__title{
                 color:white;
                 font-weight: map-get($font-weight, bold);
                 font-size: map-get($font-size--title, max);
+                @media screen and(max-width:576px){
+                    font-size: map-get($font-size--title, min);
+                }
 
             }
             .Card {
                 display:flex;
                 align-items: center;
-                width:450px;
+                width:100%;
+                max-width: 450px;
                 border-radius: 5px;
                 box-sizing: border-box;
                 text-align: start;
@@ -69,7 +94,8 @@
                     display:flex;
                     align-items: center;
                     justify-content: space-around;
-                    width:30%;
+                    width:100%;
+                    max-width:120px;
                     height: 100%;
                 }
                 &__info {
@@ -84,16 +110,28 @@
                         color:white;
                         font-weight: map-get($font-weight, bold);
                         font-size:map-get($font-size--title, min);
+                        @media screen and(max-width:576px) {
+                            font-size:map-get($font-size--text, medium);
+
+                        }
                     }
                     .Card__title-secondary{
                         color:white;
                         font-weight:map-get($font-weight, medium);
                         font-size:map-get($font-size--text, medium);
+                        @media screen and(max-width:576px) {
+                            font-size:map-get($font-size--text, min);
+
+                        }
                     }
                     .Card__text {
                         color:white;
                         font-weight: map-get($font-weight, regular);
                         font-size:map-get($font-size--text, min);
+                        @media screen and(max-width:576px) {
+                            font-size:map-get($font-size--text, extra-min);
+
+                        }
                     }
                 }
             }

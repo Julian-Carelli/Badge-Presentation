@@ -4,6 +4,10 @@
     padding:10px 0px;
     &__title {
         font-weight: 800;
+        font-size: map-get($font-size--title, medium);
+        @media screen and (max-width:576px){
+            font-size: map-get($font-size--title, min);
+        }
     }
 }
 
@@ -14,16 +18,28 @@
         .Badge-form__label {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, medium);
+            @media screen and(max-width:576px){
+                font-size:map-get($font-size--text, min);
+            }
         }
         .Badge-form__input {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, min);
+            @media screen and(max-width:576px){
+                font-size:map-get($font-size--text, min);
+            }
         }
     }
-    &__button {
+    &__block {
         .Badge-form__button {
             font-weight: map-get($font-weight, regular);
             font-size:map-get($font-size--text, regular);
+            &:hover {
+                opacity:0.9;
+            }
+            @media screen and(max-width:576px){
+                font-size:map-get($font-size--text, min);
+            }
         }
     }
 }

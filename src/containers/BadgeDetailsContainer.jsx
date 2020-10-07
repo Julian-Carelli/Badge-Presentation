@@ -10,22 +10,30 @@ import BadgeDetails from '../pages/BadgeDetails'
 import api from '../api'
 
 const BadgeDetailsContainer = (props) => {
-    const [state, setState] = useState({
-        loading:true,
-        error:null,
-        data:undefined,
-        modalIsOpen: false,
-    })
+
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    const [data, setData] = useState(undefined)
+    const [modalIsOpen, setModalIsOpen] = useState(false) 
 
     const fetchData = async () => {
-        setState({loading:true, error:null, data:state.data, modalIsOpen:false})
+        setLoading(true)
+        setError(null)
+        setData(undefined)
+        setModalIsOpen(false)
 
         try {
             const data = await api.badges.read(props.match.params.badgeId)
-            setState({loading: false, error:null, data:data, modalIsOpen:false})
+            setData(data)
+            setModalIsOpen(false)
+            setLoading(false)
+
         }
         catch(error){
-            setState({loading:false, error:error, data:state.data, modalIsOpen:false})
+            setError(error)
+            setModalIsOpen(false)
+            setLoading(false)
+
         }
     }
 
@@ -34,45 +42,62 @@ const BadgeDetailsContainer = (props) => {
     }, [])
 
     const handleOnOpenModal = e => {
-        setState({modalIsOpen: true, loading:false, error:null, data:state.data})
+        setError(null)
+        setModalIsOpen(true)
+        setData(data)
+        setLoading(false)
     }
 
     const handleOnCloseModal = e => {
-        setState({modalIsOpen:false, loading:false, error:null, data:state.data})
+        setError(null)
+        setModalIsOpen(false)
+        setData(data)
+        setLoading(false)
     }
 
     const handleDeleteBadge = async e => {
-        setState({loading:true, error:null, modalIsOpen:true, data:state.data})
+        setError(null)
+        setModalIsOpen(false)
+        setData(data)
+        setLoading(false)
 
         try {
             await api.badges.remove(
                 props.match.params.badgeId
             )
-
-            setState({loading:false, error:null, modalIsOpen:true, data:state.data})
+            
+            setError(null)
+            setModalIsOpen(true)
+            setData(data)
+            setLoading(false)
 
             props.history.push('/badges')
         }
 
         catch(error){
-            setState({loading:false, error:error, modalIsOpen:false, data:state.data})
+            setError(null)
+            setModalIsOpen(false)
+            setData(data)
+            setLoading(false)
+
         }
     }
 
-    if(state.loading === true){
+    if(loading === true){
         return <Loading></Loading>
     }
 
-    if(state.error){
+    if(error){
         return <Error500></Error500>
     }
 
     return(
         <BadgeDetails 
-        state={state} 
+        data={data} 
         handleOnCloseModal={handleOnCloseModal} 
         handleOnOpenModal={handleOnOpenModal}
         handleDeleteBadge={handleDeleteBadge}
+        modalIsOpen={modalIsOpen}
         >
         </BadgeDetails>
     )

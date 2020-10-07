@@ -17,6 +17,9 @@
                     &:hover {
                         opacity: 0.6;
                     }
+                    @media screen and(max-width:576px) {
+                        font-size: 1.3em;
+                    }
                 }
             }
             

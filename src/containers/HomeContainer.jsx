@@ -11,22 +11,27 @@ import Home from '../pages/Home'
 
 
 const HomeContainer = () => {
-    const [state, setState] = useState({
-        loading:true,
-        error:null,
-        data:undefined
-    })
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
+    const [data, setData] = useState(undefined)
 
     const fetchData = async () => {
-        setState({loading:true, error:null, data:state.data})
+        setLoading(true)
+        setError(null)
+        setData(undefined)
 
         try {
             const data = await api.badges.list()
-            setState({loading:false, error:null, data:data})
+            setData(data)
+            setError(undefined)
+            setLoading(false)
+
         }
 
         catch(error) {
-            setState({loading:false, error:error, data:state.data})
+            setData(undefined)
+            setError(error)
+            setLoading(false)
         }
     }
 
@@ -34,15 +39,15 @@ const HomeContainer = () => {
         fetchData()
     }, [])
 
-    if(state.loading === true){
+    if(loading === true){
         return <Loading></Loading>
     }
 
-    if(state.error){
+    if(error){
         return <Error500></Error500>
     }
 
-    const stateReverse = state.data.slice(0).reverse().slice(0, 3)
+    const stateReverse = data.slice(0).reverse().slice(0, 3)
 
     return(
         <Home state={stateReverse}></Home>

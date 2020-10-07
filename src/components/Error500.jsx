@@ -14,7 +14,7 @@ import '../assets/styles/components/Error500.scss'
 const Error500 = () => (
     <div className="Error500 container-fluid pl-0 pr-0 ">
         <div className="Error500__row bg-white row">
-            <div className="Error500-content col-12 ">
+            <div className="Error500-content col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div className="Error500-content__background">
                     <img className="Error500-content__img" src={error} alt="Imagen Error 500"></img>
                 </div>

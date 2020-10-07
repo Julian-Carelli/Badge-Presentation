@@ -14,7 +14,7 @@ import '../assets/styles/components/Error404.scss'
 const Error404 = () => (
     <div className="Error404 container-fluid">
         <div className="Error404__row row ">
-            <div className="Error404-content col-12">
+            <div className="Error404-content col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div className="Error404-content__background">
                     <img className="Error404-content__img" src={Error} alt="Imagen Error 404"></img>
                 </div>

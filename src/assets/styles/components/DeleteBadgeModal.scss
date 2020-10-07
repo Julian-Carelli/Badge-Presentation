@@ -4,16 +4,31 @@
     .DeleteBadgeModal__title {
         font-weight: map-get($font-weight, bold);
         font-size:map-get($font-size--title, max);
+        @media screen and (max-width:576px) {
+            font-size:map-get($font-size--title, min);
+        }
     }
     .DeleteBadgeModal__text {
         font-weight: map-get($font-weight, medium);
         font-size:map-get($font-size--text, medium);
+        @media screen and (max-width:576px) {
+            font-size:map-get($font-size--text, min);
+        }
     }
 }
 .DeleteBadgeModal__actions {
+    @media screen and(max-width:576px) {
+        display:flex;
+        justify-content: center;
+    }
     .DeleteBadgeModal__button {
+        font-size:map-get($font-size--text, medium);
         &:hover {
             opacity:0.9;
         }
+        @media screen and(max-width:576px) {
+            font-size:map-get($font-size--text, min);
+        }
+        
     }
 }

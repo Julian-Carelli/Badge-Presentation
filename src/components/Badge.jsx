@@ -13,26 +13,31 @@ import '../assets/styles/components/Badge.scss'
 
 const Badge = ({data}) => (
 
-    <div className="Badge" key={data.id}>
-        <div className="Badge__background">
-            <img className="Badge__img" src={Logo} alt="Logo de la conferencia"></img>
-        </div>
-        <div className="Badge__email">
-            <Gravatar className="Badge__avatar"
-            email={data.email || 'example@example.com'}
-            alt="Avatar"
-            />
-            <h1 className="Badge__title">{data.firstName} <br/> {data.lastName} </h1>
-        </div>
-        <div className="Badge__profesion">
-            <p className="Badge__text">{data.email}</p>
-            <p className="Badge__text">{data.jobTitle}</p>
-            <div className="Badge__span">{data.twitter}</div>
-        </div>
-        <div className="Badge__platziConf">
-            <p className="Badge__text">#PlatziConf</p>
+    <div className="Badge container">
+        <div className="Badge__row row">
+            <div className="Badge-body col col-sm-12 col-md-12 col-xl-12" key={data.id}>
+                <div className="Badge-body__background">
+                    <img className="Badge-body__img" src={Logo} alt="Logo de la conferencia"></img>
+                </div>
+                <div className="Badge-body__email">
+                    <Gravatar className="Badge-body__avatar"
+                    email={data.email || 'example@example.com'}
+                    alt="Avatar"
+                    />
+                    <h1 className="Badge-body__title">{data.firstName} <br/> {data.lastName} </h1>
+                </div>
+                <div className="Badge-body__profesion">
+                    <p className="Badge-body__text">{data.email}</p>
+                    <p className="Badge-body__text">{data.jobTitle}</p>
+                    <div className="Badge-body__span">{data.twitter}</div>
+                </div>
+                <div className="Badge-body__platziConf">
+                    <p className="Badge-body__text">#PlatziConf</p>
+                </div>
+            </div>
         </div>
     </div>
+
 )
 
 export default Badge

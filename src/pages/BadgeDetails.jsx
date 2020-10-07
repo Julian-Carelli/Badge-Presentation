@@ -12,23 +12,23 @@ import Actions from '../components/Actions'
 
 import '../assets/styles/pages/BadgeDetails.scss'
 
-const BadgeDetails = ({state, handleOnCloseModal, handleDeleteBadge, handleOnOpenModal}) => (
+const BadgeDetails = ({data, modalIsOpen, handleOnCloseModal, handleDeleteBadge, handleOnOpenModal}) => (
     <>
-        <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
+        <BackgroundBadge firstName={data.firstName} lastName={data.lastName}></BackgroundBadge>
         <div className="BadgeDetails container">
             <div className="BadgeDetails__row row">
-                <div className="BadgeDetails__badge col-12">
-                    <Badge data={state.data}></Badge>
+                <div className="BadgeDetails__badge col-12  col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <Badge data={data}></Badge>
                 </div>
             </div>
-            <div className="BadgeDetails__row">
-                <div className="BadgeDetails__actions col-12 text-center">
+            <div className="BadgeDetails__row row">
+                <div className="BadgeDetails__actions col-12  col-sm-12 col-md-12 col-lg-12 col-xl-12 text-center">
                     <Actions 
                     onCloseModal={handleOnCloseModal} 
                     onOpenModal={handleOnOpenModal}
-                    modalIsOpen={state.modalIsOpen}
+                    modalIsOpen={modalIsOpen}
                     deleteBadge={handleDeleteBadge}
-                    data={state.data}>
+                    data={data}>
                     </Actions>
                 </div>
             </div>

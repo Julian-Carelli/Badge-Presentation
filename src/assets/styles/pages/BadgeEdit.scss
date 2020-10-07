@@ -1,5 +1,8 @@
 .badgeEdit {
     margin-top: 25px;
+    .row {
+        margin:auto;
+    }
     .badgeEdit-row {
         &__badge {
             margin: auto;

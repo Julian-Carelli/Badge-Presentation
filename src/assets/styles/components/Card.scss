@@ -5,28 +5,50 @@ body {
         width:100%;
         &__filter {
             display:flex;
-            justify-content: start;
+            justify-content: flex-start;
             color:white;
+            @media screen and(max-width:576px){
+                justify-content: center;
+            }
             .container__label {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--text, medium);
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--text, min);
+                    
+                }
             }
             .container__input {
                 font-weight: map-get($font-weight, regular);
                 font-size: map-get($font-size--text, min);
                 margin-left:20px;
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--text, extra-min);
+                    
+                }
             }
         }
         
         &__notFound {
+            height: 640px;
             .container__title {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--title, medium);
                 color:white;
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--title, min);
+                }
             }   
             .container__button {
                 font-weight:map-get($font-weight, bold);
                 font-size:map-get($font-size--text, medium);
+                &:hover {
+                    opacity:0.9;
+                }
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--text, min);
+                    
+                }
             }
         }
     
@@ -39,30 +61,59 @@ body {
             padding: 40px 120px; 
             border-radius: 5px;
             background-color: #1C3643;
+            @media screen and(max-width:576px) {
+                padding:0px;
+            }
                 
             &__img {
                 padding:0;
                 margin:auto;
+                display:flex;
+                justify-content: center;
+                padding:20px 0px;
                     img {
-                        width:150px;
+                        width:100%;
+                        max-width:120px;
+                        @media screen and(max-width:320px) and (min) {
+                            
+                        }
+                        @media screen and(max-width:576px) {
+                            width: 80%;
+                        }
                     }
             }
     
-            &__text {
+            &__info {
+                width:50%;
+                @media screen and(max-width:576px) {
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
                 .Card__title-primary {
                     color:white;
                     font-weight: map-get($font-weight, bold);
                     font-size:map-get($font-size--title, medium);
+                    @media screen and (max-width:576px){
+                        font-size:map-get($font-size--title, min);
+                    }
                 }
                 .Card__title-secondary {
                     color:white;
                     font-weight: map-get($font-weight, medium);
                     font-size: map-get($font-size--title, min);
+                    @media screen and (max-width:576px){
+                        font-size:map-get($font-size--text, min);
+                    }
                 }
                 .Card__text {
                     color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, min);
+                    @media screen and (max-width:576px){
+                        font-size:map-get($font-size--text, extra-min);
+                    }
                 }
             }
             

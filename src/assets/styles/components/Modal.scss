@@ -13,8 +13,12 @@
     top: 10rem;
     background-color: #ffffff;
     padding: 1rem;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     top:40%;
+    @media screen and(max-width:576px){
+      width:90%;
+    }
     .Modal__close-button {
       position: absolute;
       top: 0;

@@ -25,14 +25,6 @@
       "id": 3
     },
     {
-      "firstName": "Guido",
-      "lastName": "Gasalla",
-      "email": "Elchinobilli@gmail.com",
-      "jobTitle": "Cadete",
-      "twitter": "@elchino",
-      "id": 4
-    },
-    {
       "firstName": "Matias ",
       "lastName": "Linari",
       "email": "matutedegiorello@yopmail.com",
@@ -81,12 +73,12 @@
       "id": 11
     },
     {
-      "firstName": "Elias",
-      "lastName": "Lataste",
-      "email": "elLastas@gmail.com",
-      "jobTitle": "Periodismo",
-      "twitter": "@latas",
-      "id": 12
+      "firstName": "Guido",
+      "lastName": "Gasalla",
+      "email": "Elchinobilli@gmail.com",
+      "jobTitle": "Reparador de celulares",
+      "twitter": "@jajaja",
+      "id": 14
     }
   ]
 }

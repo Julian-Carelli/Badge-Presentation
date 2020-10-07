@@ -5,9 +5,8 @@ import React from 'react'
 
 import md5 from 'md5'
 
-const Gravatar = (props) => {
+const Gravatar = ({email, className, alt}) => {
 
-    const {email, className, alt} = props
 
     const first_email = email;
     const hash = md5(first_email)

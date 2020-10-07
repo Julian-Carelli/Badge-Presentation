@@ -17,10 +17,10 @@ const BadgeNew = ({state, handleOnChange, handleOnSubmit}) => (
         <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
         <div className="BadgeNew container">
             <div className="BadgeNew-row row">
-                <div className="BadgeNew-row__badge col-6">
+                <div className="BadgeNew-row__badge col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <Badge data={state.data}></Badge>
                 </div>
-                <div className="BadgeNew-row__form col-6">
+                <div className="BadgeNew-row__form col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <BadgeForm title="Nueva Presentacion" error={state.error} data={state.data} onSubmit={handleOnSubmit} onChange={handleOnChange}></BadgeForm>
                 </div>
             </div>

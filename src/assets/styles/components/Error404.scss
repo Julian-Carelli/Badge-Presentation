@@ -6,6 +6,9 @@
     padding:0;
     margin:auto;
     display: flex;
+    .row {
+        margin:auto;
+    }
     &__row {
         width:100%;
         justify-content: center;
@@ -16,17 +19,36 @@
         .Error404-content {
             &__background {
                 .Error404-content__img {
-                    width:400px;
+                    width:100%;
+                    max-width:400px;
+                    @media screen and(max-width:576px) {
+                        width:50%;
+                    }
                 }
             }
+
+            &__title {
+                font-weight: map-get($font-weight, bold);
+                font-size: map-get($font-size--title, max);
+                @media screen and(max-width:576px) {
+                    font-size: map-get($font-size--title, min);
+                }
+            }
+
             &__info {
                 .Error404-content__text {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
+                    @media screen and(max-width:576px) {
+                        font-size: map-get($font-size--text, extra-min);   
+                    }
                 }
                 .Error404-content__button {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
+                    @media screen and(max-width:576px) {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
                 }
             }
         }

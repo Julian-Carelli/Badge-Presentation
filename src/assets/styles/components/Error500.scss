@@ -9,6 +9,9 @@
     padding-left:0px;
     padding-right: 0px;
     background-color: white;
+    .row {
+        margin:auto;
+    }
     &__row {
         width:100%;
         justify-content: center;
@@ -19,23 +22,35 @@
         .Error500-content {
             &__background {
                 .Error500-content__img {
-                    max-width: 400px;
+                    max-width: 600px;
                     width: 100%;
+                    @media screen and(max-width:576px){
+                        width:80%;
+                    }
                 }
             }
             &__title {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--title, max);
+                @media screen and(max-width:576px){
+                    font-size: map-get($font-size--title, min);
+                }
             }
             &__info {
                 .Error500-content__text{
                     font-weight: map-get($font-weight, regular);
-                    font-size:map-get($font-size--text, medium)
+                    font-size:map-get($font-size--text, medium);
+                    @media screen and(max-width:576px){
+                        font-size: map-get($font-size--text, extra-min);
+                    }
                 }
                 .Error500-content__button {
                     margin-bottom:40px;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
+                    @media screen and(max-width:576px){
+                        font-size: map-get($font-size--text, extra-min);
+                    }
                 }
             }
         }

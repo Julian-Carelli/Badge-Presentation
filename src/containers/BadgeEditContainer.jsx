@@ -1,6 +1,6 @@
 //Dependencies
 
-import React,{useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react'
 
 //Components
 
@@ -11,20 +11,22 @@ import api from '../api'
 
 const BadgeEditContainer = (props) => {
 
+    const [loading, setLoading] = useState(true)
+    const [error, setError] = useState(null)
     const [state, setState] = useState({
-        loading:true,
-        error:null,
         data:{
             firstName:"",
             lastName:"",
-            email:"",   
+            email:"",
             jobTitle:"",
-            twitter:""
+            twitter:"",
         }
     })
 
     const fetchData = async () => {
-        setState({loading:true, error:null, data:state.data})
+        setLoading(true)
+        setError(null)
+        setState({...state.data})
 
         try {
 
@@ -32,12 +34,13 @@ const BadgeEditContainer = (props) => {
                 props.match.params.badgeId
             )
 
-            setState({loading:false, error:null, data:data})
-
+            setState({data:data})
+            setLoading(false)
 
         }
         catch(error){
-            setState({loading:false, error:error, data:state.data})
+            setError(error)
+            setLoading(false)
         }
     }
 
@@ -56,25 +59,30 @@ const BadgeEditContainer = (props) => {
     }
 
     const handleOnSubmit = async event => {
-        setState({loading:true, error:null, data:state.data})
+        setLoading(true)
+        setError(null)
+        setState({...state.data})
         event.preventDefault()
 
         try {
             const data = await api.badges.update(props.match.params.badgeId, state.data)
-            setState({loading:false, error:null, data:data})
+            setState({data:data})
+            setLoading(false)
+
             props.history.push('/badges')
 
         }
         catch(error){
-            setState({loading:false, error:error, data:state.data})
+            setError(error)
+            setLoading(false)
         }
     }
 
-    if(state.loading === true){
+    if(loading === true){
         return <Loading></Loading>
     }
 
-    if(state.error){
+    if(error){
         return <Error500></Error500>
     }
 
