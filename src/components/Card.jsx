@@ -44,12 +44,12 @@ const Card = ({state}) => {
         <div className="container">
            <CardFilter query={query} notFound={true} setQuery={setQuery}/>
             {filteredBadges.map(state => 
-                <Link className="text-reset text-decoration-none" key={state.id} to={`/badges/${state.id}`}>
-                    <div className="Card row">
-                        <div className="Card__img col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                            <Gravatar email={state.email} alt="Avatar"></Gravatar>
+                <Link className="container__presentation text-reset text-decoration-none row" key={state.id} to={`/badges/${state.id}`}>
+                    <div className="Card col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                        <div className="Card__img ">
+                            <Gravatar className="Card__avatar" email={state.email} alt="Avatar"></Gravatar>
                         </div>
-                        <div className="Card__info text-dark col-6 col-sm-6 col-md-6 col-lg-6 col-6-xl">
+                        <div className="Card__info text-dark ">
                             <h4 className="Card__title-primary">{state.firstName} {state.lastName}</h4>
                             <h5 className="Card__title-secondary">{state.jobTitle}</h5>
                             <p className="Card__text">{state.email}</p>

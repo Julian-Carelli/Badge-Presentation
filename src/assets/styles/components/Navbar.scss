@@ -1,17 +1,42 @@
+@import '../variables/variables.scss';
+
 .Navbar {
   width: 100%;
-  height:50px;
-  background-color: #1C3643;
+  max-height: 50px;
+  height:100%;
   margin: auto;
+  background-color: #1C3643;
   .Navbar-brand {
-    color: #ffffff;
     display: flex;
     align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    @media screen and (max-width:320px) and (min-width: 0px){
+      height: 50%;
+      font-size: 11px;      
+    }
+    @media screen and (max-width:480px) and (min-width: 321px){
+      height: 50%;
+      font-size: 12px;
+    }
+
     &__icon {
+      font-size:map-get($font-size--text, max);
       margin:0px 10px;
-      font-size:1.7em;
       padding:9px 0px;
       color:greenyellow;
+      @media screen and (max-width:320px) and (min-width: 0px){
+        font-size:map-get($font-size--text, medium);
+      }
+      @media screen and (max-width:480px) and (min-width: 320px){
+        font-size:map-get($font-size--text, medium)
+      }
+      @media screen and (max-width:768px) and (min-width: 480px){
+        font-size:map-get($font-size--text, medium)
+      }
+      @media screen and (max-width:1024) and (min-width: 768px){
+        font-size:map-get($font-size--text, max)
+      }
       &:hover {
         opacity:0.9;
       }

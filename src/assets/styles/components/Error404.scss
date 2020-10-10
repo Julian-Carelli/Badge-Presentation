@@ -1,28 +1,63 @@
 @import '../variables/variables.scss';
 
 .Error404 {
+    display: flex;
     width: 100%;
-    height:800px;
+    height: 100vh;
     padding:0;
     margin:auto;
-    display: flex;
+    justify-content: center;
     .row {
         margin:auto;
     }
     &__row {
-        width:100%;
         justify-content: center;
         flex-direction: column;
         text-align: center;
-        line-height: 60px;
+        width:100%;
         margin:auto;
+        line-height: 60px;
+        @media screen and(max-width:320px) and (min-width: 0px){
+            line-height: normal;
+        }
+        @media screen and(max-width:480px) and (min-width: 320px){
+            line-height: normal;
+        }
+        @media screen and(max-width:768px) and (min-width: 480px){
+            line-height: normal;
+        }
+        @media screen and(max-width:1024px) and (min-width: 768px){
+            line-height: normal;
+        }
         .Error404-content {
+            font-size: 16px;
+            @media screen and(max-width:320px) and (min-width: 0px){
+                font-size:14px;
+            }
+            @media screen and(max-width:480px) and (min-width: 320px){
+                font-size:15px;
+            }
+            @media screen and(max-width:768px) and (min-width: 480px){
+                font-size: 15px;
+            }
+            @media screen and(max-width:1024px) and (min-width: 768px){
+                font-size: 16px;
+            }
             &__background {
                 .Error404-content__img {
-                    width:100%;
                     max-width:400px;
-                    @media screen and(max-width:576px) {
-                        width:50%;
+                    width:100%;
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:480px) and (min-width: 320px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        width: 40%;
                     }
                 }
             }
@@ -30,24 +65,65 @@
             &__title {
                 font-weight: map-get($font-weight, bold);
                 font-size: map-get($font-size--title, max);
-                @media screen and(max-width:576px) {
-                    font-size: map-get($font-size--title, min);
+                
+                @media screen and(max-width:320px) and (min-width: 0px){
+                    font-size:map-get($font-size--text, medium);
+                }
+                @media screen and(max-width:480px) and (min-width: 320px){
+                    font-size:map-get($font-size--text, medium);
+                }
+                @media screen and(max-width:768px) and (min-width: 480px){
+                    font-size:map-get($font-size--text, max);
+                }
+                @media screen and(max-width:1024px) and (min-width: 768px){
+                    font-size:map-get($font-size--text, max);
                 }
             }
 
             &__info {
+                font-size: 14px;
+                @media screen and(max-width:320px) and (min-width: 0px){
+                    font-size:10px;
+                }
+                @media screen and(max-width:480px) and (min-width: 480px){
+                    font-size:11px;
+                }
+                @media screen and(max-width:768px) and (min-width: 480px){
+                    font-size:12px;
+                }
+                @media screen and(max-width:1024px) and (min-width: 768px){
+                    font-size:13px;
+                }
                 .Error404-content__text {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
-                    @media screen and(max-width:576px) {
-                        font-size: map-get($font-size--text, extra-min);   
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:480px) and (min-width: 321px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
                 .Error404-content__button {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, medium);
-                    @media screen and(max-width:576px) {
-                        font-size: map-get($font-size--text, extra-min);
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:480px) and (min-width: 321px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        font-size:map-get($font-size--text, medium);
                     }
                 }
             }

@@ -1,77 +1,213 @@
 @import '../variables/variables.scss';
 
 .Presentation {
-    background: url('../../images/stars.svg'), #1b1b25;
-    width: 100%;
-    height: 700px;
     display:flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 700px;
     padding:0px;
+    background: url('../../images/stars.svg'), #1b1b25;
+    @media screen and (max-width:320px) and (min-width:0px){
+        height:auto;
+    }
+    @media screen and (max-width:480px) and (min-width:320px){
+        height:auto;
+    }
+    @media screen and (max-width:768px) and (min-width:480px){
+        height:auto;
+    }
     &__row{
         align-items: center;
         padding:0px;
-        
-        
+        @media screen and (max-width:1024px) and (min-width:768px){
+            margin:auto;
+        }
         .Presentation-background {
             display: flex;
             justify-content: center;
             margin:auto;
             padding:0px;
-            @media screen and(max-width:576px) {
-                
+            @media screen and (max-width:320px)and (min-width:0px){
+                display: flex;
+                justify-content: flex-start;
             }
-            
-            
+            @media screen and (max-width:480px)and (min-width:320px){
+                display: flex;
+                justify-content: flex-start;
+            }
+            @media screen and (max-width:768px)and (min-width:480px){
+                display: flex;
+                justify-content: center;
+            }
+    
             &__img {
+                max-width: 300px;
                 width: 100%;
-                max-width: 400px;
-                @media screen and(max-width:576px) {
-                    width:75%;
+                @media screen and (max-width:320px)and (min-width:0px){
+                    width: 50%;
+                    padding:40px 10px;
+                }
+                @media screen and (max-width:480px)and (min-width:320px){
+                    width: 50%;
+                    padding:40px 10px;
+                }
+                @media screen and (max-width:768px)and (min-width:480px){
+                    width: 40%;
+                    padding:80px 10px;
+                }
+                @media screen and (max-width:1024px)and (min-width:768px){
+                    width: 100%;
                 }
             }
         }
         .Presentation-content {
-            @media screen and(max-width:576px){
-                
+            font-size: 17px;
+            @media screen and (max-width:320px)and (min-width:0px){
+                font-size: 13px;
             }
+            @media screen and (max-width:480px)and (min-width:320px){
+                font-size: 14px;
+            }
+            @media screen and (max-width:768px) and (min-width:480px){
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                font-size:15px;
+            }
+            @media screen and (max-width:1024px)and (min-width:768px){
+                font-size: 15px;
+            }
+            
            &__title {
-                color:white;
                 font-weight: map-get($font-weight, extra-bold);
                 font-size: map-get($font-size--title, max);
-                @media screen and (max-width:576px){
-                    font-size: map-get($font-size--title, min);
+                color:white;
+                @media screen and (max-width:320px)and (min-width:0px){
+                    font-size:map-get($font-size--title, min);
                 }
+                @media screen and (max-width:480px)and (min-width:320px){
+                    font-size:map-get($font-size--title, min);
+                }
+                @media screen and (max-width:768px) and (min-width:480px){
+                    font-size: map-get($font-size--title, medium);
+                }
+                @media screen and (max-width:1024px)and (min-width:768px){
+                    font-size: map-get($font-size--title, medium);
+                }
+                
            }
            &__info {
+                padding: 10px 0px;
+                font-size: 14px;
+                @media screen and (max-width:320px) and (min-width:0px){
+                    width: 50%;
+                    font-size: 9px;
+                }
+                @media screen and (max-width:480px) and (min-width:320px){
+                    width: 50%;
+                    font-size: 10px;
+                    padding:5px 0px;
+                }
+                @media screen and (max-width:768px) and (min-width:480px){
+                    width: 50%;
+                    font-size: 11px;
+                    padding:30px 0px;
+                    text-align: center;
+                }
+                @media screen and (max-width:1024px) and (min-width:768px){
+                    width: 100%;
+                    font-size: 13px;
+                    padding:0px;
+                }
+                
                .Presentation-content__text {
-                    color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, max);
-                    @media screen and (max-width:576px){
+                    color:white;
+                    @media screen and (max-width:320px)and (min-width:0px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and (max-width:480px)and (min-width:320px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and (max-width:768px) and (min-width:480px){
+                        font-size: map-get($font-size--text, medium);
+                    }
+                    @media screen and (max-width:1024px) and (min-width:768px){
                         font-size: map-get($font-size--text, medium);
                     }
                 }
                 .Presentation-content__btn{
-                    color:white;
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, medium);
+                    color:white;
                     &:hover {
                         opacity:0.9;
                     }
-                    @media screen and (max-width:576px){
+                    @media screen and (max-width:320px)and (min-width:0px){
                         font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and (max-width:480px)and (min-width:320px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and (max-width:768px) and (min-width:480px){
+                        font-size: map-get($font-size--text, medium);
+                    }
+                    @media screen and (max-width:1024px) and (min-width:768px){
+                        font-size: map-get($font-size--text, medium);
                     }
                }
            }
         }
 
         .Presentation-recents {
+            margin:10px 0px;
+            padding:0px;
+            font-size: 12px;
+            @media screen and (max-width:320px)and (min-width:0px){
+                padding:20px 10px;
+                font-size: 10px;
+            }
+            @media screen and (max-width:480px)and (min-width:320px){
+                padding:20px 10px;
+                font-size: 11px;
+            }
+            @media screen and (max-width:768px) and (min-width:480px){
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                font-size: 12px;
+            }
+            @media screen and (max-width:1024px) and (min-width:768px){
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                font-size: 12px;
+            }
+            
+            &__link {
+                @media screen and (max-width:768px) and (min-width:480px){
+                    display:flex;
+                    justify-content: center;
+                    width:100%;
+                }
+            }
             &__title{
-                color:white;
                 font-weight: map-get($font-weight, bold);
                 font-size: map-get($font-size--title, max);
-                @media screen and(max-width:576px){
+                color:white;
+                @media screen and (max-width:320px)and (min-width:0px){
+                    font-size: map-get($font-size--text, medium);
+                }
+                @media screen and (max-width:480px)and (min-width:320px){
+                    font-size: map-get($font-size--text, medium);
+                }
+                @media screen and (max-width:768px) and (min-width:480px){
+                    font-size: map-get($font-size--title, min);
+                }
+                @media screen and (max-width:1024px) and (min-width:768px){
                     font-size: map-get($font-size--title, min);
                 }
 
@@ -79,14 +215,14 @@
             .Card {
                 display:flex;
                 align-items: center;
-                width:100%;
-                max-width: 450px;
-                border-radius: 5px;
-                box-sizing: border-box;
                 text-align: start;
+                width:100%;
                 margin:20px 0px;
-                background-color: #1C3643;
+                max-width: 400px;      
+                box-sizing: border-box;
+                border-radius: 5px;
                 overflow: hidden;
+                background-color: #1C3643;
                 &:hover {
                     opacity:0.7;
                 }
@@ -94,9 +230,26 @@
                     display:flex;
                     align-items: center;
                     justify-content: space-around;
-                    width:100%;
-                    max-width:120px;
+                    width:30%;
                     height: 100%;
+                    margin:0px 10px;
+                    .Card__avatar {
+                        max-width:90px;
+                        width:100%;
+                        border-radius:50%;
+                        @media screen and(max-width:321px) and (min-width:0px) {
+                            width:60%;
+                        }
+                        @media screen and(max-width:480px) and (min-width:320px) {
+                            width:60%;
+                        }
+                        @media screen and (max-width:768px) and (min-width:480px){
+                            width:80%;
+                        }
+                        @media screen and (max-width:1024px) and (min-width:768px){
+                            width:80%;
+                        }
+                    }
                 }
                 &__info {
                     display:flex;
@@ -106,31 +259,68 @@
                     height:100%;
                     line-height: 30px;
                     padding:15px 0px;
+                    font-size: 15px;
+                    @media screen and(max-width:320px) and (min-width:0px) {
+                        font-size: 13px;
+                    }
+                    @media screen and(max-width:480px) and (min-width:320px) {
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width:768px) and (min-width:480px){   
+                        font-size: 15px;
+                    }
+                    @media screen and (max-width:768px) and (min-width:480px){
+                        font-size: 15px;
+                    }
                     .Card__title-primary {
-                        color:white;
                         font-weight: map-get($font-weight, bold);
                         font-size:map-get($font-size--title, min);
-                        @media screen and(max-width:576px) {
+                        color:white;
+                        @media screen and(max-width:320px) and (min-width:0px) {
                             font-size:map-get($font-size--text, medium);
-
+                        }
+                        @media screen and(max-width:480px) and (min-width:320px) {
+                            font-size:map-get($font-size--text, medium);
+                        }
+                        @media screen and (max-width:768px) and (min-width:480px){
+                            font-size: map-get($font-size--title, min);
+                        }
+                        @media screen and (max-width:1024px) and (min-width:768px){
+                            font-size: map-get($font-size--title, min);
                         }
                     }
                     .Card__title-secondary{
-                        color:white;
                         font-weight:map-get($font-weight, medium);
                         font-size:map-get($font-size--text, medium);
-                        @media screen and(max-width:576px) {
+                        color:white;
+                        @media screen and(max-width:320px) and (min-width:0px) {
                             font-size:map-get($font-size--text, min);
-
+                        }
+                        @media screen and(max-width:480px) and (min-width:320px) {
+                            font-size:map-get($font-size--text, min);
+                        }
+                        @media screen and (max-width:768px) and (min-width:480px){
+                            font-size: map-get($font-size--text, medium);
+                        }
+                        @media screen and (max-width:1024px) and (min-width:768px){
+                            font-size: map-get($font-size--text, medium);
                         }
                     }
                     .Card__text {
-                        color:white;
                         font-weight: map-get($font-weight, regular);
                         font-size:map-get($font-size--text, min);
-                        @media screen and(max-width:576px) {
+                        color:white;
+                        @media screen and(max-width:320px) and (min-width:0px) {
                             font-size:map-get($font-size--text, extra-min);
-
+                        }
+                        @media screen and(max-width:480px) and (min-width:320px) {
+                            font-size:map-get($font-size--text, extra-min);
+                        }
+                        @media screen and (max-width:768px) and (min-width:480px){
+                            font-size: map-get($font-size--text, min);
+                        }
+                        @media screen and (max-width:1024px) and (min-width:768px){
+                            font-size: map-get($font-size--text, min);
                         }
                     }
                 }
