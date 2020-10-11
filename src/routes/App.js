@@ -5,7 +5,7 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 //Component
 
-import Layout from '../components/Layout'
+import Layout from '../components/stateless/Layout'
 
 //Containers
 

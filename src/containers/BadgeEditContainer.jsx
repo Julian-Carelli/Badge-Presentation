@@ -5,8 +5,8 @@ import React, {useState, useEffect} from 'react'
 //Components
 
 import BadgeEdit from '../pages/BadgeEdit'
-import Loading from '../components/Loading'
-import Error500 from '../components/Error500'
+import Loading from '../components/stateless/Loading'
+import Error500 from '../components/stateless/Error500'
 import api from '../api'
 
 const BadgeEditContainer = (props) => {
@@ -87,7 +87,7 @@ const BadgeEditContainer = (props) => {
     }
 
     return(
-        <BadgeEdit state={state} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeEdit>
+        <BadgeEdit data={state.data} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeEdit>
     )
 }
 

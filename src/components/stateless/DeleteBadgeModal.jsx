@@ -4,11 +4,11 @@ import React from 'react'
 
 //Components
 
-import Modal from '../components/Modal'
+import Modal from './Modal'
 
 //Assets
 
-import '../assets/styles/components/DeleteBadgeModal.scss'
+import '../../assets/styles/components/DeleteBadgeModal.scss'
 
 
 const DeleteBadgeModal = ({isOpen, onClose, deleteBadge}) => (

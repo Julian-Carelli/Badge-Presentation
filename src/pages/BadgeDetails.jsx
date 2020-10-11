@@ -4,9 +4,9 @@ import React from 'react'
 
 //Components
 
-import BackgroundBadge from '../components/BackgroundBadge'
-import Badge from '../components/Badge'
-import Actions from '../components/Actions'
+import BackgroundBadge from '../components/stateless/BackgroundBadge'
+import Badge from '../components/stateless/Badge'
+import Actions from '../components/stateless/Actions'
 
 //Assets
 

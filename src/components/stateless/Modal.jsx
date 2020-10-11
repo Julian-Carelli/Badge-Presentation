@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 
 //Assets 
 
-import '../assets/styles/components/Modal.scss'
+import '../../assets/styles/components/Modal.scss'
 
 const Modal = ({isOpen, onClose, children}) => {
     if(!isOpen){

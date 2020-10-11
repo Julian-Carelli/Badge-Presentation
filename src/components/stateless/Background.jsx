@@ -4,8 +4,8 @@ import React from 'react'
 
 //Assets
 
-import '../assets/styles/components/Background.scss'
-import Header from '../assets/images/badge-header.svg'
+import '../../assets/styles/components/Background.scss'
+import Header from '../../assets/images/badge-header.svg'
 
 
 const Background = () => (

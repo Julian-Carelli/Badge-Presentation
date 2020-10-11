@@ -4,7 +4,7 @@ body {
     .height {
         height: 100vh;
     }
-    .container {
+    .Container {
         width:100%;
         font-size: 14px;
         &__filter {
@@ -12,11 +12,11 @@ body {
             justify-content: center;
             color:white;
             font-size:14px;
-            .container__label {
+            .Container__label {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--text, medium);
             }
-            .container__input {
+            .Container__input {
                 font-weight: map-get($font-weight, regular);
                 font-size: map-get($font-size--text, min);
                 margin-left:20px;
@@ -24,14 +24,17 @@ body {
         }
         
         &__notFound {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
             height: 640px;
-            font-size: 13px;
-            .container__title {
+            font-size: 10px;
+            .Container__title {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--title, medium);
                 color:white;        
             }   
-            .container__button {
+            .Container__button {
                 font-weight:map-get($font-weight, bold);
                 font-size:map-get($font-size--text, medium);
                 &:hover {
@@ -43,6 +46,7 @@ body {
         &__presentation {
             display:flex;
             justify-content: center;
+            margin:0px;
             .Card {
                 display:flex;
                 align-items: center;

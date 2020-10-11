@@ -4,20 +4,20 @@ import React from 'react'
 
 //Components
 
-import Redirection from '../components/Redirection'
-import Card from '../components/Card'
+import Redirection from '../components/stateless/Redirection'
+import Container from '../components/stateful/Container'
 
 //Assets
 
 import '../assets/styles/pages/Badges.scss'
 
-const Badges = ({state}) => (
+const Badges = ({data}) => (
     <>
         <div className="Badges">
             <Redirection></Redirection>
-            <Card 
-                state={state}>
-            </Card>
+            <Container
+                data={data}>
+            </Container>
         </div>
         
     </>

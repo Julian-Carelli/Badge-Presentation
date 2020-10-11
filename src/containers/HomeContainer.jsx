@@ -4,8 +4,8 @@ import React, {useState, useEffect} from 'react'
 
 //Components
 
-import Loading from '../components/Loading'
-import Error500 from '../components/Error500'
+import Loading from '../components/stateless/Loading'
+import Error500 from '../components/stateless/Error500'
 import api from '../api'
 import Home from '../pages/Home'
 
@@ -47,10 +47,12 @@ const HomeContainer = () => {
         return <Error500></Error500>
     }
 
-    const stateReverse = data.slice(0).reverse().slice(0, 3)
+    const dataReverse = data.slice(0).reverse().slice(0, 3)
 
     return(
-        <Home state={stateReverse}></Home>
+        <Home 
+        data={dataReverse}
+        ></Home>
     )
 }
 

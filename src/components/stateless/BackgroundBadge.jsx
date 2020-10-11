@@ -4,7 +4,7 @@ import React from 'react'
 
 //Assets
 
-import '../assets/styles/components/BackgroundBadge.scss'
+import '../../assets/styles/components/BackgroundBadge.scss'
 
 const BackgroundBadge = ({firstName, lastName}) => (
 

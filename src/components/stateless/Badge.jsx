@@ -4,12 +4,12 @@ import React from 'react'
 
 //Components
 
-import Gravatar from '../components/Gravatar'
+import Gravatar from './Gravatar'
 
 //Assets
 
-import Logo from '../assets/images/platziconf-logo.svg'
-import '../assets/styles/components/Badge.scss'
+import Logo from '../../assets/images/platziconf-logo.svg'
+import '../../assets/styles/components/Badge.scss'
 
 const Badge = ({data}) => (
 

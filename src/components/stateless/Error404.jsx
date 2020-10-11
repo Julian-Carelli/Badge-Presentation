@@ -5,11 +5,11 @@ import {Link} from 'react-router-dom'
 
 //Components
 
-import Error from '../assets/images/error404.png'
+import Error from '../../assets/images/error404.png'
 
 //Assets
 
-import '../assets/styles/components/Error404.scss'
+import '../../assets/styles/components/Error404.scss'
 
 const Error404 = () => (
     <div className="Error404 container-fluid">

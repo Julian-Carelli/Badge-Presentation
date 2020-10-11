@@ -4,8 +4,8 @@ import React,{useState} from 'react'
 
 //Components
 
-import Loading from '../components/Loading'
-import Error500 from '../components/Error500'
+import Loading from '../components/stateless/Loading'
+import Error500 from '../components/stateless/Error500'
 import BadgeNew from '../pages/BadgeNew'
 import api from '../api'
 
@@ -66,7 +66,7 @@ const BadgeNewContainer = (props) => {
     
 
     return(
-        <BadgeNew state={state} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeNew>
+        <BadgeNew data={state.data} handleOnSubmit={handleOnSubmit} handleOnChange={handleOnChange}></BadgeNew>
     )
 }
 

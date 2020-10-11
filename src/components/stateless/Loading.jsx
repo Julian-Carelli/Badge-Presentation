@@ -4,7 +4,7 @@ import React from 'react'
 
 //Assets
 
-import '../assets/styles/components/Loading.scss'
+import '../../assets/styles/components/Loading.scss'
 
 const Loading = () => (
     <div className="Loading">

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 //Assets
 
-import '../assets/styles/components/Navbar.scss'
+import '../../assets/styles/components/Navbar.scss'
 
 const Navbar = () => (
     <div className="Navbar">    

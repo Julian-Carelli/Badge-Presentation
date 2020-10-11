@@ -9,7 +9,7 @@ import DeleteBadgeModal from './DeleteBadgeModal'
 
 //Assets
 
-import '../assets/styles/components/Actions.scss'
+import '../../assets/styles/components/Actions.scss'
 
 const Actions = ({data, onOpenModal, deleteBadge, onCloseModal, modalIsOpen}) => (
     <>  

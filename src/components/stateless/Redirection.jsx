@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 
 //Assets
 
-import '../assets/styles/components/Redirection.scss'
+import '../../assets/styles/components/Redirection.scss'
 
 const Redirection = () => (
     <div className="Redirection container ">

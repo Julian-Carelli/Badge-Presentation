@@ -4,8 +4,8 @@ import React, {useState, useEffect} from 'react'
 
 //Components
 
-import Loading from '../components/Loading'
-import Error500 from '../components/Error500'
+import Loading from '../components/stateless/Loading'
+import Error500 from '../components/stateless/Error500'
 import api from '../api'
 import Badges from '../pages/Badges'
 
@@ -50,7 +50,7 @@ const BadgesContainer = () => {
 
     return(
         
-        <Badges state={data}></Badges>
+        <Badges data={data}></Badges>
 
     )
 }

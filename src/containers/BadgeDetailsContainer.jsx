@@ -4,8 +4,8 @@ import React,{useState, useEffect} from 'react'
 
 //Components
 
-import Loading from '../components/Loading'
-import Error500 from '../components/Error500'
+import Loading from '../components/stateless/Loading'
+import Error500 from '../components/stateless/Error500'
 import BadgeDetails from '../pages/BadgeDetails'
 import api from '../api'
 

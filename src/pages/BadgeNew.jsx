@@ -4,24 +4,24 @@ import React from 'react'
 
 //Components
 
-import Badge from '../components/Badge'
-import BadgeForm from '../components/BadgeForm'
-import BackgroundBadge from '../components/BackgroundBadge'
+import Badge from '../components/stateless/Badge'
+import BadgeForm from '../components/stateless/BadgeForm'
+import BackgroundBadge from '../components/stateless/BackgroundBadge'
 
 //Assets
 
 import '../assets/styles/pages/BadgeNew.scss'
 
-const BadgeNew = ({state, handleOnChange, handleOnSubmit}) => (
+const BadgeNew = ({data, handleOnChange, handleOnSubmit}) => (
     <>
-        <BackgroundBadge firstName={state.data.firstName} lastName={state.data.lastName}></BackgroundBadge>
+        <BackgroundBadge firstName={data.firstName} lastName={data.lastName}></BackgroundBadge>
         <div className="BadgeNew container">
             <div className="BadgeNew-row row">
                 <div className="BadgeNew-row__badge col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <Badge data={state.data}></Badge>
+                    <Badge data={data}></Badge>
                 </div>
                 <div className="BadgeNew-row__form col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <BadgeForm title="Nueva Presentacion" error={state.error} data={state.data} onSubmit={handleOnSubmit} onChange={handleOnChange}></BadgeForm>
+                    <BadgeForm title="Nueva Presentacion"  data={data} onSubmit={handleOnSubmit} onChange={handleOnChange}></BadgeForm>
                 </div>
             </div>
         </div>

@@ -4,10 +4,10 @@ import React from 'react'
 
 //Assets
 
-import '../assets/styles/components/BadgeForm.scss'
+import '../../assets/styles/components/BadgeForm.scss'
 
 
-const BadgeForm = ({onChange, onSubmit, data, error, title}) => (
+const BadgeForm = ({onChange, onSubmit, data, title}) => (
     <>
         <div className="Badge-presentation">
             <h1 className="Badge-presentation__title">{title}</h1>
@@ -36,9 +36,6 @@ const BadgeForm = ({onChange, onSubmit, data, error, title}) => (
             <div className="Badge-form__block">
                 <button className="Badge-form__button btn btn-primary" >Agregar presentacion</button>
             </div>
-            {error && 
-                <p className="text-danger">{error.message}</p>
-            }
         </form>
     </>
 )

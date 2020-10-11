@@ -5,14 +5,14 @@ import {Link} from 'react-router-dom'
 
 //Components
 
-import Gravatar from '../components/Gravatar'
+import Gravatar from './Gravatar'
 
 //Assets
 
-import Astronauts from '../assets/images/astronauts.svg'
-import '../assets/styles/components/Presentation.scss'
+import Astronauts from '../../assets/images/astronauts.svg'
+import '../../assets/styles/components/Presentation.scss'
 
-const Presentation = ({state}) => (
+const Presentation = ({data}) => (
     <div className="Presentation container-fluid">
         <div className="Presentation__row row">
             <div className="Presentation-background col-12 col-sm-12 col-md-3 col-lg-4 col-xl-4">
@@ -29,7 +29,7 @@ const Presentation = ({state}) => (
             </div>
             <div className="Presentation-recents col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
                 <h2 className="Presentation-recents__title text-white">Badges Recientes</h2>
-                {state.map(badge => 
+                {data.map(badge => 
                     <Link className=" Presentation-recents__link text-reset text-decoration-none" key={badge.id} to={`/badges/${badge.id}`}>
                         <div className="Card">
                             <div className="Card__img">

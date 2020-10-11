@@ -4,11 +4,11 @@ import React  from 'react'
 
 //Components
 
-import Presentation from '../components/Presentation'
+import Presentation from '../components/stateless/Presentation'
 
-const Home = ({state}) => (
+const Home = ({data}) => (
     <>
-        <Presentation state={state}></Presentation>
+        <Presentation data={data}></Presentation>
     </>
 )
 
