@@ -1,0 +1,103 @@
+@import '../variables/variables.scss';
+
+.Badge-presentation {
+    @media screen and(max-width:320px) and (min-width:0px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width:480px) and (min-width:320px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width:768px) and (min-width:480px) {
+        font-size: 15px;
+    }
+    @media screen and (max-width:768px) and (min-width:480px) {
+        font-size: 16px;
+    }
+    &__title {
+        @media screen and (max-width:320px) and (min-width:0px){
+            font-size: map-get($font-size--text, medium);
+        }
+        @media screen and (max-width:480px) and (min-width:320px){
+            font-size: map-get($font-size--text, medium);
+        }
+        @media screen and (max-width:768px) and (min-width:480px){
+            font-size: map-get($font-size--text, max);
+        }
+        @media screen and (max-width:1024px) and (min-width:768px){
+            font-size: map-get($font-size--text, max);
+        }
+    }
+}
+
+.Badge-form {
+    &__block {
+        @media screen and (max-width:320px) and (min-width:0px){
+            font-size: 10px
+        }
+        @media screen and (max-width:480px) and (min-width:320px){
+            font-size: 11px;
+        }
+        @media screen and (max-width:768px) and (min-width:480px){
+            font-size: 12px;
+        }
+        @media screen and (max-width:1024px) and (min-width:768px){
+            font-size: 13px;
+        }
+        .Badge-form__label {
+            @media screen and (max-width:320px) and (min-width:0px){
+                font-size: map-get($font-size--text, min);
+            }
+            @media screen and (max-width:480px) and (min-width:320px){
+                font-size: map-get($font-size--text, min);
+            }
+            @media screen and (max-width:768px) and (min-width:480px){
+                font-size: map-get($font-size--text, medium);
+            }
+            @media screen and (max-width:1024px) and (min-width:768px){
+                font-size: map-get($font-size--text, medium)
+            }
+        }
+        .Badge-form__input {
+            @media screen and (max-width:320px) and (min-width:0px){
+                font-size: map-get($font-size--text, extra-min);
+            }
+            @media screen and (max-width:480px) and (min-width:320px){
+                font-size: map-get($font-size--text, extra-min);
+            }
+            @media screen and (max-width:768px) and (min-width:480px){
+                font-size: map-get($font-size--text, min);
+            }
+            @media screen and (max-width:1024px) and (min-width:768px){
+                font-size: map-get($font-size--text, min)
+            }
+        }
+    }
+    &__block {
+        @media screen and(max-width:320px) and (min-width: 0px){
+            font-size: 10px
+        }
+        @media screen and(max-width:480px) and (min-width: 320px){
+            font-size: 11px
+        }
+        @media screen and (max-width:768px) and (min-width:480px){
+            font-size: 12px;
+        }
+        @media screen and (max-width:1024px) and (min-width:768px){
+            font-size: 13px;
+        }
+        .Badge-form__button {
+            @media screen and (max-width:320px) and (min-width:0px){
+                font-size: map-get($font-size--text, min);
+            }
+            @media screen and (max-width:480px) and (min-width:320px){
+                font-size: map-get($font-size--text, min);
+            }
+            @media screen and (max-width:768px) and (min-width:480px){
+                font-size: map-get($font-size--text, medium);
+            }
+            @media screen and (max-width:1024px) and (min-width:768px){
+                font-size: map-get($font-size--text, medium);
+            }
+        }
+    }
+}

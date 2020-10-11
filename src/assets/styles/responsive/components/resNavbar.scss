@@ -1,0 +1,74 @@
+@import '../variables/variables.scss';
+
+.Navbar {
+    .Navbar-brand {
+        @media screen and (max-width:320px) and (min-width: 0px){
+        height: 50%;
+        font-size: 11px;      
+        }
+        @media screen and (max-width:480px) and (min-width: 320px){
+        height: 50%;
+        font-size: 12px;
+        }
+
+    &__logo {
+        .Navbar-brand__icon {
+            @media screen and (max-width:320px) and (min-width: 0px){
+                font-size:map-get($font-size--text, medium);
+            }
+            @media screen and (max-width:480px) and (min-width: 320px){
+                font-size:map-get($font-size--text, medium)
+            }
+            @media screen and (max-width:768px) and (min-width: 480px){
+                font-size:map-get($font-size--text, medium)
+            }
+            @media screen and (max-width:1024) and (min-width: 768px){
+                font-size:map-get($font-size--text, max)
+            }
+        }
+        .Navbar-brand__name {
+            @media screen and (max-width:320px) and (min-width: 0px){
+                font-size:map-get($font-size--text, extra-min);
+            }
+            @media screen and (max-width:480px) and (min-width: 320px){
+                font-size:map-get($font-size--text, extra-min)
+            }
+            @media screen and (max-width:768px) and (min-width: 480px){
+                font-size:map-get($font-size--text, extra-min)
+            }
+            @media screen and (max-width:1024) and (min-width: 768px){
+                font-size:map-get($font-size--text, min)
+            }
+          }
+    }
+    &__profile {
+        @media screen and (max-width:320px) and (min-width: 0px){
+            font-size:map-get($font-size--text, medium);
+        }
+        @media screen and (max-width:480px) and (min-width: 320px){
+            font-size:map-get($font-size--text, medium)
+        }
+        @media screen and (max-width:768px) and (min-width: 480px){
+            font-size:map-get($font-size--text, medium)
+        }
+        @media screen and (max-width:1024) and (min-width: 768px){
+            font-size:map-get($font-size--text, max)
+        }
+        .Navbar-brand__link {
+          .Navbar-brand__fab {
+            @media screen and (max-width:320px) and (min-width: 0px){
+                margin:0px 5px;
+            }
+            @media screen and (max-width:480px) and (min-width: 320px){
+                margin:0px 8px;
+
+            }
+          }
+        }
+        &:hover {
+          opacity:0.9;
+        }
+      }
+  }
+}
+  

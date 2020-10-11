@@ -5,10 +5,6 @@
     }
     .BadgeNew-row {
         padding:40px 0px;
-        @media screen and(max-width:576px){
-            display:flex;
-            flex-direction: column;
-        }
         &__badge {
             margin: auto;
         }

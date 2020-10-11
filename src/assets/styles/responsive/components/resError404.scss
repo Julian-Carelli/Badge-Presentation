@@ -1,0 +1,107 @@
+@import '../variables/variables.scss';
+
+.Error404 {
+    &__row {
+        @media screen and(max-width:320px) and (min-width: 0px){
+            line-height: normal;
+        }
+        @media screen and(max-width:480px) and (min-width: 320px){
+            line-height: normal;
+        }
+        @media screen and(max-width:768px) and (min-width: 480px){
+            line-height: normal;
+        }
+        @media screen and(max-width:1024px) and (min-width: 768px){
+            line-height: normal;
+        }
+        .Error404-content {
+            @media screen and(max-width:320px) and (min-width: 0px){
+                font-size:14px;
+            }
+            @media screen and(max-width:480px) and (min-width: 320px){
+                font-size:15px;
+            }
+            @media screen and(max-width:768px) and (min-width: 480px){
+                font-size: 15px;
+            }
+            @media screen and(max-width:1024px) and (min-width: 768px){
+                font-size: 16px;
+            }
+            &__background {
+                .Error404-content__img {
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:480px) and (min-width: 320px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        width:40%;
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        width: 40%;
+                    }
+                }
+            }
+
+            &__title {            
+                @media screen and(max-width:320px) and (min-width: 0px){
+                    font-size:map-get($font-size--text, medium);
+                }
+                @media screen and(max-width:480px) and (min-width: 320px){
+                    font-size:map-get($font-size--text, medium);
+                }
+                @media screen and(max-width:768px) and (min-width: 480px){
+                    font-size:map-get($font-size--text, max);
+                }
+                @media screen and(max-width:1024px) and (min-width: 768px){
+                    font-size:map-get($font-size--text, max);
+                }
+            }
+
+            &__info {
+                @media screen and(max-width:320px) and (min-width: 0px){
+                    font-size:10px;
+                }
+                @media screen and(max-width:480px) and (min-width: 480px){
+                    font-size:11px;
+                }
+                @media screen and(max-width:768px) and (min-width: 480px){
+                    font-size:12px;
+                }
+                @media screen and(max-width:1024px) and (min-width: 768px){
+                    font-size:13px;
+                }
+                .Error404-content__text {
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:480px) and (min-width: 321px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                }
+                .Error404-content__button {
+                    @media screen and(max-width:320px) and (min-width: 0px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:480px) and (min-width: 321px){
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @media screen and(max-width:768px) and (min-width: 480px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @media screen and(max-width:1024px) and (min-width: 768px){
+                        font-size:map-get($font-size--text, medium);
+                    }
+                }
+            }
+        }
+        
+    }
+}

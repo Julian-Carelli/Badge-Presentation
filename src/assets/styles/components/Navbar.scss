@@ -9,37 +9,39 @@
   .Navbar-brand {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #ffffff;
     font-size: 14px;
-    @media screen and (max-width:320px) and (min-width: 0px){
-      height: 50%;
-      font-size: 11px;      
+    &__logo{
+      display: flex;
+      align-items: center;
+      .Navbar-brand__icon {   
+        font-size:map-get($font-size--text, max);
+        margin:0px 10px;
+        padding:9px 0px;
+        color:greenyellow;
+        &:hover {
+          opacity:0.9;
+        }
+      }
+      .Navbar-brand__name {
+        font-size: map-get($font-size--text, min);
+      }
     }
-    @media screen and (max-width:480px) and (min-width: 321px){
-      height: 50%;
-      font-size: 12px;
-    }
-
-    &__icon {
+    &__profile {
       font-size:map-get($font-size--text, max);
-      margin:0px 10px;
+      margin-right:40px;
       padding:9px 0px;
-      color:greenyellow;
-      @media screen and (max-width:320px) and (min-width: 0px){
-        font-size:map-get($font-size--text, medium);
+      .Navbar-brand__link {
+        .Navbar-brand__fab {
+          color:greenyellow;
+          margin:0px 10px;
+          &:hover {
+            opacity:0.8;
+          }
+        }
       }
-      @media screen and (max-width:480px) and (min-width: 320px){
-        font-size:map-get($font-size--text, medium)
-      }
-      @media screen and (max-width:768px) and (min-width: 480px){
-        font-size:map-get($font-size--text, medium)
-      }
-      @media screen and (max-width:1024) and (min-width: 768px){
-        font-size:map-get($font-size--text, max)
-      }
-      &:hover {
-        opacity:0.9;
-      }
+      
     }
   }
 }
