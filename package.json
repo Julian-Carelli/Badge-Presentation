@@ -16,7 +16,8 @@
     "react-scripts": "3.4.3"
   },
   "scripts": {
-    "start": "npm-run-all -p client server",
+    "start": "node server.js",
+    "begin": "npm-run-all -p client server",
     "client": "react-scripts start",
     "server": "json-server --port 3001 --watch server/db.json",
     "seed": "node server/seed.js",
