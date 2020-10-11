@@ -1,8 +1,8 @@
 {
   "name": "badge-presentation",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
-  "homepage": "http://Julian-Carelli.github.io/Badge-Presentation",
+  "homepage": "http://Julian-Carelli.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
