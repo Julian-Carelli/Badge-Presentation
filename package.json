@@ -2,6 +2,7 @@
   "name": "badge-presentation",
   "version": "0.0.0",
   "private": true,
+  "homepage": "http://Julian-Carelli.github.io/Badge-Presentation",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -20,6 +21,8 @@
     "server": "json-server --port 3001 --watch server/db.json",
     "seed": "node server/seed.js",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,6 +44,7 @@
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.0",
     "faker": "^5.1.0",
+    "gh-pages": "^3.1.0",
     "json-server": "^0.16.1",
     "md5": "^2.3.0",
     "npm-run-all": "^4.1.5"
