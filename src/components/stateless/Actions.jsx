@@ -21,7 +21,7 @@ const Actions = ({data, onOpenModal, deleteBadge, onCloseModal, modalIsOpen}) =>
                 <div className="Actions-menu__method col-12">
                     <div className="Actions-menu__edit">
                         <Link to={`/badges/${data.id}/edit`}>
-                            <button className="Actions-menu__button btn btn-warning mb-4">Editar</button>
+                            <button className="Actions-menu__button btn mb-4">Editar</button>
                         </Link>
                     </div>
                     <div className="Actions-menu__delete">

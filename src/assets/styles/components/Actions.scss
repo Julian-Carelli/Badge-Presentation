@@ -21,6 +21,8 @@
                 .Actions-menu__button {
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, min);
+                    background-color: gray;
+                    color:white;
                     &:hover {
                         opacity: 0.8;
                     }
