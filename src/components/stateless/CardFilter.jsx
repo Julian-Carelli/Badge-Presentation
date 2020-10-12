@@ -9,6 +9,7 @@ const CardFilter = ({query, setQuery, notFound}) => {
             <div className="Container__filter form-group">
                 <label className="Container__label">Filtrar Badges</label>
                 <input 
+                maxLength="20"
                 className="Container__input form-group" 
                 type="text"
                 value={query}
