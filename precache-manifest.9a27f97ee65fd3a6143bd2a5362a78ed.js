@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a78c06d9dbc4ec997234d5c21fb6c0e9",
+    "revision": "969b6dc35388fc809433c5e9a64b153f",
     "url": "/Badge-Presentation/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Badge-Presentation/static/css/2.f12df956.chunk.css"
   },
   {
-    "revision": "a93a553db8cfe9237d18",
-    "url": "/Badge-Presentation/static/css/main.9d0826c5.chunk.css"
+    "revision": "82fd61ff3ffb989cf959",
+    "url": "/Badge-Presentation/static/css/main.998b5e03.chunk.css"
   },
   {
     "revision": "7847fc40bff93ff09cc8",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Badge-Presentation/static/js/2.318d2d9b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a93a553db8cfe9237d18",
-    "url": "/Badge-Presentation/static/js/main.2fbef1f6.chunk.js"
+    "revision": "82fd61ff3ffb989cf959",
+    "url": "/Badge-Presentation/static/js/main.682bd51a.chunk.js"
   },
   {
     "revision": "1bc88dbc9a0a8d972081",
