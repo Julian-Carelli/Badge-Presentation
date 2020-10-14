@@ -7,10 +7,6 @@ import {Link} from 'react-router-dom'
 
 import error from '../../assets/images/error500.png'
 
-//Assets
-
-import '../../assets/styles/components/Error500.scss'
-
 const Error500 = () => (
     <div className="Error500 container-fluid pl-0 pr-0 ">
         <div className="Error500__row bg-white row">

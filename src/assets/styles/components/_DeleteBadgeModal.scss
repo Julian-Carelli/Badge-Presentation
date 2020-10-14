@@ -1,7 +1,7 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .DeleteBadgeModal__message{
-    font-size: 16px;
+    font-size: map-get($font-size--px, max);
     .DeleteBadgeModal__title {
         font-weight: map-get($font-weight, bold);
         font-size:map-get($font-size--title, max);
@@ -12,9 +12,9 @@
     }
 }
 .DeleteBadgeModal__actions {
-    font-size: 12px;
+    font-size: map-get($font-size--px, min+2);
     .DeleteBadgeModal__button {
-        font-size:map-get($font-size--text, medium);
+        @extend .DeleteBadgeModal__text;
         &:hover {
             opacity:0.9;
         }

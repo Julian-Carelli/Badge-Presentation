@@ -3,10 +3,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-//Assets
-
-import '../../assets/styles/components/Redirection.scss'
-
 const Redirection = () => (
     <div className="Redirection container ">
         <div className="Redirection-row row">

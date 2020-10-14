@@ -1,0 +1,17 @@
+.Loading {
+    .Loading__circle {
+        @include phone-min {
+            width: 50%;
+        }
+        @include phone-max {
+            width: 50%;
+        }
+        @include tablet {
+            width: 60%;
+        }
+        @include desktop {
+            width: 60%;
+        }
+    }
+}
+        

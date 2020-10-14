@@ -1,0 +1,107 @@
+@import '../variables/_variables.scss';
+
+.Error404 {
+    &__row {
+        @include phone-min {
+            line-height: normal;
+        }
+        @include phone-max {
+            line-height: normal;
+        }
+        @include tablet {
+            line-height: normal;
+        }
+        @include desktop {
+            line-height: normal;
+        }
+        .Error404-content {
+            @include phone-min {
+                font-size: map-get($font-size--px, medium+1);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, max);
+            }
+            &__background {
+                .Error404-content__img {
+                    @include phone-min {
+                        width:40%;
+                    }
+                    @include phone-max {
+                        width:40%;
+                    }
+                    @include tablet {
+                        width:40%;
+                    }
+                    @include desktop {
+                        width:40%;
+                    }
+                }
+            }
+
+            &__title {
+                @include phone-min {
+                    font-size:map-get($font-size--text, medium);
+                }
+                @include phone-max {
+                    font-size:map-get($font-size--text, medium);
+                }
+                @include tablet {
+                    font-size:map-get($font-size--text, max);
+                }
+                @include desktop {
+                    font-size:map-get($font-size--text, max);
+                }            
+            }
+
+            &__info {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, medium);
+                }   
+                .Error404-content__text {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include tablet {
+                        font-size: map-get($font-size--text, medium);
+                    }
+                    @include desktop {
+                        font-size: map-get($font-size--text, medium);
+                    } 
+                }
+                .Error404-content__button {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include tablet {
+                        font-size: map-get($font-size--text, medium);
+                    }
+                    @include desktop {
+                        font-size: map-get($font-size--text, medium);
+                    }
+                }
+            }
+        }
+        
+    }
+}

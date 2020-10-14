@@ -1,0 +1,77 @@
+@import '../variables/_variables.scss';
+
+.DeleteBadgeModal__message{
+    @include phone-min {
+        font-size: map-get($font-size--px, min+2);
+        font-size:12px;
+    }
+    @include phone-max {
+        font-size: map-get($font-size--px, medium);
+    }
+    @include tablet {
+        font-size: map-get($font-size--px, medium+1);
+    }
+    @include desktop {
+        font-size: map-get($font-size--px, medium+1);
+    }
+    .DeleteBadgeModal__title {
+        @include phone-min {
+            font-size:map-get($font-size--text, medium);
+        }
+        @include phone-max {
+            font-size:map-get($font-size--text, medium);
+        }
+        @include tablet {
+            font-size:map-get($font-size--title, medium);
+        }
+        @include desktop {
+            font-size:map-get($font-size--title, max);
+        }
+    }
+    .DeleteBadgeModal__text {
+        @include phone-min {
+            font-size:map-get($font-size--text, min);
+        }
+        @include phone-max {
+            font-size:map-get($font-size--text, min);
+        }
+        @include tablet {
+            font-size:map-get($font-size--text, min);
+        }
+        @include desktop {
+            font-size:map-get($font-size--text, medium);
+        }
+    }
+}
+.DeleteBadgeModal__actions {
+    @include phone-min {
+        display:flex;
+        justify-content: center;
+        font-size: map-get($font-size--px, min);
+    }
+    @include phone-max {
+        display:flex;
+        justify-content: center;
+        font-size: map-get($font-size--px, min+1);
+    }
+    @include tablet {
+        font-size: map-get($font-size--px, min+2);
+    }
+    @include desktop {
+        font-size: map-get($font-size--px, min+2);
+    }
+    .DeleteBadgeModal__button {
+        @include phone-min {
+            font-size:map-get($font-size--text, extra-min);
+        }
+        @include phone-max {
+            font-size:map-get($font-size--text, extra-min);
+        }
+        @include tablet {
+            font-size:map-get($font-size--text, min);
+        }
+        @include desktop {
+            font-size:map-get($font-size--text, medium);
+        }
+    }
+}

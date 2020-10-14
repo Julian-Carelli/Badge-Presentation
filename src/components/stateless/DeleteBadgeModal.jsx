@@ -6,11 +6,6 @@ import React from 'react'
 
 import Modal from './Modal'
 
-//Assets
-
-import '../../assets/styles/components/DeleteBadgeModal.scss'
-
-
 const DeleteBadgeModal = ({isOpen, onClose, deleteBadge}) => (
     <Modal isOpen={isOpen} onClose={onClose}>
         <div className="DeleteBadgeModal__message">

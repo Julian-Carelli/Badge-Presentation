@@ -1,0 +1,140 @@
+@import '../variables/_variables.scss';
+
+
+.Badge{
+    &__row {
+        .Badge-body {
+            &__background {
+                .Badge-body__img {
+                    @include phone-min {
+                        width:30%;
+                    }
+                    @include phone-max {
+                        width:30%;
+                    }
+                    @include tablet {
+                        width:30%;
+                    }
+                    @include desktop {
+                        width:100%;
+                    }
+                }
+        
+            }
+            &__email {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, medium);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, medium+2);
+                }
+                .Badge-body__avatar {
+                    @include phone-min {
+                        width:30%;
+                    }
+                    @include phone-max {
+                        width:30%;
+                    }
+                    @include tablet {
+                        width: 30%;
+                    }
+                    @include desktop {
+                        width: 35%;
+                    }
+                }
+                .Badge-body__title {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, max);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, max);
+                    }
+                }
+        
+            }
+            .Badge-body__profesion {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                .Badge-body__text {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, medium);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, medium);
+                    }
+                }
+                .Badge-body__span {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, min);
+                    }
+                }
+        
+            }
+            .Badge-body__platziConf {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                .Badge-body__text {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, min);
+                    }
+                }
+            }
+        }
+    }
+}

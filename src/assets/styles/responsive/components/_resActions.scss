@@ -1,0 +1,93 @@
+@import '../variables/_variables.scss';
+
+
+.Actions {
+    .Actions-menu {        
+        &__presentation {
+            @include phone-min {
+                font-size: map-get($font-size--px, medium+1);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, max);
+            }
+            .Actions-menu__title {
+                @include phone-min {
+                    font-size: map-get($font-size--text, max);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, max);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, max);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--title, max);
+                }
+            }
+        }
+        &__method {
+            .Actions-menu__edit {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, medium);
+                }
+                .Actions-menu__button {
+                    @include phone-min {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size: map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size: map-get($font-size--text, min);
+                    }
+                }
+            }
+            .Actions-menu__delete {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, medium);
+                }
+                .Actions-menu__button {
+                    @include phone-min {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size: map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size: map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size: map-get($font-size--text, min);
+                    }
+                }
+            }
+        }
+    }
+}

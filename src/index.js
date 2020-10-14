@@ -10,7 +10,7 @@ import App from './routes/App'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/fontawesome-free/css/all.css'
-import '../src/assets/styles/responsive/responsive.scss'
+import '../src/assets/styles/responsive/_responsive.scss'
 import './global.scss'
 
 ReactDOM.render(

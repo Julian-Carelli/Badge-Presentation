@@ -7,10 +7,6 @@ import {Link} from 'react-router-dom'
 
 import DeleteBadgeModal from './DeleteBadgeModal'
 
-//Assets
-
-import '../../assets/styles/components/Actions.scss'
-
 const Actions = ({data, onOpenModal, deleteBadge, onCloseModal, modalIsOpen}) => (
     <>  
         <div className="Actions container">

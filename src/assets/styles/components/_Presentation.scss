@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .Presentation {
     display:flex;
@@ -33,7 +33,7 @@
             }
             &__info {
                 padding: 10px 0px;
-                font-size: 14px;
+                font-size: map-get($font-size--px, medium+1);
                .Presentation-content__text {
                     font-weight: map-get($font-weight, regular);
                     font-size: map-get($font-size--text, max);
@@ -53,7 +53,7 @@
         .Presentation-recents {
             margin:10px 0px;
             padding:0px;
-            font-size: 12px;
+            font-size: map-get($font-size--px, min+2);
             &__title{
                 font-weight: map-get($font-weight, bold);
                 font-size: map-get($font-size--title, max);
@@ -94,7 +94,7 @@
                     height:100%;
                     line-height: 30px;
                     padding:15px 0px;
-                    font-size: 15px;
+                    font-size: map-get($font-size--px, medium+2);
                     .Card__title-primary {
                         font-weight: map-get($font-weight, bold);
                         font-size:map-get($font-size--title, min);

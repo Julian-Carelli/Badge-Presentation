@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 body {
     .height {
@@ -6,12 +6,12 @@ body {
     }
     .Container {
         width:100%;
-        font-size: 14px;
+        font-size: map-get($font-size--px, medium+1);
         &__filter {
             display:flex;
             justify-content: center;
             color:white;
-            font-size:14px;
+            font-size: map-get($font-size--px, medium+1);
             .Container__label {
                 font-weight: map-get($font-weight, medium);
                 font-size: map-get($font-size--text, medium);
@@ -28,10 +28,9 @@ body {
             flex-direction: column;
             align-items: center;
             height: 640px;
-            font-size: 10px;
+            font-size: map-get($font-size--px, min);
             .Container__title {
-                font-weight: map-get($font-weight, medium);
-                font-size: map-get($font-size--title, medium);
+                @extend .Container__label;
                 color:white;        
             }   
             .Container__button {
@@ -85,7 +84,7 @@ body {
                     height:100%;
                     padding:15px 0px;
                     line-height: 30px;
-                    font-size: 15px;
+                    font-size: map-get($font-size--px, medium+2);
                     .Card__title-primary {
                         font-weight: map-get($font-weight, bold);
                         font-size:map-get($font-size--title, medium);
@@ -97,8 +96,7 @@ body {
                         color:white;
                     }
                     .Card__text {
-                        font-weight: map-get($font-weight, regular);
-                        font-size: map-get($font-size--text, min);
+                        @extend .Container__input;
                         color:white;
                     }
                 }    

@@ -9,10 +9,6 @@ import CardFilter from '../stateless/CardFilter'
 import arrayFilter from '../../utils/arrayFilter'
 import Card from '../stateless/Card'
 
-//Assets
-
-import '../../assets/styles/components/Card.scss'
-
 
 const Container = ({data}) => {
 

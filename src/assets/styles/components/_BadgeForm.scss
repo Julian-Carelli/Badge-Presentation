@@ -1,8 +1,8 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .Badge-presentation {
     padding:10px 0px;
-    font-size: 16px;
+    font-size: map-get($font-size--px, max);
     &__title {
         font-weight: 800;
         font-size: map-get($font-size--title, medium);
@@ -11,7 +11,7 @@
 
 .Badge-form {
     padding:10px 0px;
-    font-size: 13px;
+    font-size: map-get($font-size--px, medium);
     &__block {
         padding:3px 0px;
         .Badge-form__label {
@@ -25,8 +25,7 @@
     }
     &__block {
         .Badge-form__button {
-            font-weight: map-get($font-weight, regular);
-            font-size:map-get($font-size--text, medium);
+            @extend .Badge-form__label;
             &:hover {
                 opacity:0.9;
             }

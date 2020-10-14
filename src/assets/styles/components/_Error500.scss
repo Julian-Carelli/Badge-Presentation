@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .Error500 {
     width: 100%;
@@ -20,7 +20,7 @@
         margin:auto;
         line-height: 60px;
         .Error500-content {
-            font-size: 16px;
+            font-size: map-get($font-size--px, max);
             &__background {
                 .Error500-content__img {
                     max-width: 600px;
@@ -32,14 +32,13 @@
                 font-size: map-get($font-size--title, max);
             }
             &__info {
-                font-size: 14px;
+                font-size: map-get($font-size--px, medium+1);
                 .Error500-content__text{
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, medium);
                 }
                 .Error500-content__button {
-                    font-weight: map-get($font-weight, regular);
-                    font-size: map-get($font-size--text, medium);
+                    @extend .Error500-content__text;
                     margin-bottom:40px;
                 }
             }

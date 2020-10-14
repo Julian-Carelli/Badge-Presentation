@@ -1,0 +1,72 @@
+@import '../variables/_variables.scss';
+
+.Navbar {
+    .Navbar-brand {
+        @include phone-min {
+            height: 50%;
+            font-size: map-get($font-size--px, min+1);
+        }
+        @include phone-max {
+            height: 50%;
+            font-size: map-get($font-size--px, min+2);
+        }
+    &__logo {
+        .Navbar-brand__icon {
+            @include phone-min {
+                font-size:map-get($font-size--text, medium);
+            }
+            @include phone-max {
+                font-size:map-get($font-size--text, medium);
+            }
+            @include tablet {
+                font-size:map-get($font-size--text, medium)
+            }
+            @include desktop {
+                font-size:map-get($font-size--text, max)
+            }
+        }
+        .Navbar-brand__name {
+            @include phone-min {
+                font-size:map-get($font-size--text, extra-min);
+            }
+            @include phone-max {
+                font-size:map-get($font-size--text, extra-min);
+            }
+            @include tablet {
+                font-size:map-get($font-size--text, extra-min);
+            }
+            @include desktop {
+                font-size:map-get($font-size--text, min);
+            }
+          }
+    }
+    &__profile {
+        @include phone-min {
+            font-size:map-get($font-size--text, medium);
+        }
+        @include phone-max {
+            font-size:map-get($font-size--text, medium);
+        }
+        @include tablet {
+            font-size:map-get($font-size--text, medium);
+        }
+        @include desktop {
+            font-size:map-get($font-size--text, max)
+        }
+        .Navbar-brand__link {
+          .Navbar-brand__fab {
+            @include phone-min {
+                margin:0px 5px;
+            }
+            @include phone-max {
+                margin:0px 8px;
+            }
+          }
+        }
+        &:hover {
+          opacity:0.9;
+        }
+      }
+  }
+}
+  

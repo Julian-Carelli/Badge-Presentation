@@ -10,7 +10,6 @@ import Gravatar from './Gravatar'
 //Assets
 
 import Astronauts from '../../assets/images/astronauts.svg'
-import '../../assets/styles/components/Presentation.scss'
 
 const Presentation = ({data}) => (
     <div className="Presentation container-fluid">

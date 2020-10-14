@@ -1,0 +1,210 @@
+@import '../variables/_variables.scss';
+
+body {
+    .Container {
+        &__filter {
+            @include phone-min {
+                font-size: map-get($font-size--px, min);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, min+1);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, min+2);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, min+2);
+            }
+            .Container__label {
+                @include phone-min {
+                    font-size:map-get($font-size--text, min)
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, medium);
+                }
+            }
+            .Container__input {
+                @include phone-min {
+                    font-size:map-get($font-size--text, extra-min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, extra-min);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, extra-min);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, min);
+                }
+            }
+        }
+        
+        &__notFound {
+            @include phone-min {
+                font-size: map-get($font-size--px, min);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, min);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, min);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, min);
+            }
+            .Container__title {
+                @include phone-min {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, medium);
+                }
+            }   
+            .Container__button {
+                @include phone-min {
+                    font-size: map-get($font-size--text, extra-min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, extra-min);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, min);
+                }
+            }
+        }
+
+        &__presentation {
+            @include phone-min {
+                padding:20px 10px;
+            }
+            @include phone-max {
+                padding:20px 10px;
+            }
+            @include tablet {
+                padding:20px 10px;
+            }
+            .Card {
+                @include phone-min {
+                    padding:0px;
+                }
+                @include phone-max {
+                    padding:0px;
+                }
+                @include tablet {
+                    margin:5px 0px;
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, min);
+                }
+                &__img {
+                    @include phone-min {
+                        justify-content: center;
+                        width: 30%;
+                        margin: 0px 10px;
+                    }
+                    @include phone-max {
+                        justify-content: center;
+                        width: 30%;
+                        margin: 0px 10px;
+                    }
+                    @include tablet {
+                        justify-content: center;
+                        width:50%;
+                    }
+                    @include desktop {
+                        justify-content: center;
+                        width:100%;
+                    }
+                    
+                    .Card__avatar {
+                        @include phone-min {
+                            width: 60%;
+                        }
+                        @include phone-max {
+                            width:60%;
+                        }
+                        @include tablet {
+                            width:50%;
+                        }
+                        @include desktop {
+                            width:100%;
+                        }
+                    }
+                }
+        
+                &__info {
+                    @include phone-min {
+                        font-size: map-get($font-size--px, medium);
+                    }
+                    @include phone-max {
+                        font-size: map-get($font-size--px, medium+1);
+                    }
+                    @include tablet {
+                        font-size: map-get($font-size--px, medium+1);
+                    }
+                    @include desktop {
+                        width:70%;
+                        font-size: map-get($font-size--px, medium+2);
+                    }   
+                    .Card__title-primary {
+                        @include phone-min {
+                            font-size:map-get($font-size--text, medium);
+                        }
+                        @include phone-max {
+                            font-size:map-get($font-size--text, medium);
+                        }
+                        @include tablet {
+                            font-size: map-get($font-size--title, min);
+                        }
+                        @include desktop {
+                            font-size: map-get($font-size--title, min);
+                        } 
+                    }
+                    .Card__title-secondary {
+                        @include phone-min {
+                            font-size:map-get($font-size--text, min);
+                        }
+                        @include phone-max {
+                            font-size:map-get($font-size--text, min);
+                        }
+                        @include tablet {
+                            font-size: map-get($font-size--text, medium);
+                        }
+                        @include desktop {
+                            font-size: map-get($font-size--text, medium);
+                        }
+                    }
+                    .Card__text {
+                        @include phone-min {
+                            font-size:map-get($font-size--text, extra-min);
+                        }
+                        @include phone-max {
+                            font-size:map-get($font-size--text, extra-min);
+                        }
+                        @include tablet {
+                            font-size: map-get($font-size--text, min);
+                        }
+                        @include desktop {
+                            font-size: map-get($font-size--text, min);
+                        }
+                    }
+                }    
+            }
+        }    
+    }
+}

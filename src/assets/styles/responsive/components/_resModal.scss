@@ -1,0 +1,15 @@
+@import '../../variables/variables';
+
+.Modal {
+    &__container {
+        @include phone-min {
+            width:80%;
+        }
+        @include phone-max {
+            width: 80%;
+        }
+    }  
+}
+  
+    
+    

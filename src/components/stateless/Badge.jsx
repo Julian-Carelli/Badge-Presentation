@@ -9,7 +9,6 @@ import Gravatar from './Gravatar'
 //Assets
 
 import Logo from '../../assets/images/platziconf-logo.svg'
-import '../../assets/styles/components/Badge.scss'
 
 const Badge = ({data}) => (
 

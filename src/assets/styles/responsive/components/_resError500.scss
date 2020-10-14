@@ -1,0 +1,104 @@
+@import '../variables/_variables.scss';
+
+.Error500 {
+    &__row {
+        @include phone-min {
+            line-height: normal;
+        }
+        @include phone-max {
+            line-height: normal;
+        }
+        @include tablet {
+            line-height: normal;
+        }
+        @include desktop {
+            line-height: normal;
+        }
+        .Error500-content {
+            @include phone-min {
+                font-size: map-get($font-size--px, medium+1);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, max);
+            }
+            &__background {
+                .Error500-content__img {
+                    @include phone-min {
+                        width: 70%;
+                    }
+                    @include phone-max {
+                        width: 70%;
+                    }
+                    @include tablet {
+                        width: 70%;
+                    }
+                    @include desktop {
+                        width: 70%;
+                    }
+                }
+            }
+            &__title {
+                @include phone-min {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--title, min);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--title, min);
+                }
+            }
+            &__info {
+                @include phone-min {
+                    font-size: map-get($font-size--px, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--px, min+1);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--px, min+2);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--px, medium);
+                }
+                .Error500-content__text{
+                    @include phone-min {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, min);
+                    }
+                }
+                .Error500-content__button {
+                    @include phone-min {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include phone-max {
+                        font-size:map-get($font-size--text, extra-min);
+                    }
+                    @include tablet {
+                        font-size:map-get($font-size--text, min);
+                    }
+                    @include desktop {
+                        font-size:map-get($font-size--text, min);
+                    }
+                }
+            }
+        }
+    }
+}

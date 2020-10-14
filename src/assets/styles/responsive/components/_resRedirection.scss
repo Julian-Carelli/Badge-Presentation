@@ -1,0 +1,48 @@
+@import '../variables/_variables.scss';
+
+.Redirection {
+    .Redirection-row {
+        &__text {
+            @include phone-min {
+                font-size: map-get($font-size--px, min+1);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, min+2);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, medium);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, medium);
+            }
+            .Redirection-row__title {
+                @include phone-min {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--title, min);
+                }
+            }
+            .Redirection-row__button {
+                @include phone-min {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, min);
+                }
+                @include desktop {
+                    font-size: map-get($font-size--text, medium);
+                }
+            }
+        }
+    }
+}

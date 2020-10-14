@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .Navbar {
   width: 100%;
@@ -11,7 +11,7 @@
     align-items: center;
     justify-content: space-between;
     color: #ffffff;
-    font-size: 14px;
+    font-size: map-get($font-size--px, medium+1);
     &__logo{
       display: flex;
       align-items: center;

@@ -1,4 +1,4 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 .Error404 {
     display: flex;
@@ -18,7 +18,7 @@
         margin:auto;
         line-height: 60px;
         .Error404-content {
-            font-size: 16px;
+            font-size: map-get($font-size--px, max);
             &__background {
                 .Error404-content__img {
                     max-width:400px;
@@ -38,8 +38,7 @@
                     font-size: map-get($font-size--text, medium);
                 }
                 .Error404-content__button {
-                    font-weight: map-get($font-weight, regular);
-                    font-size: map-get($font-size--text, medium);
+                    @extend .Error404-content__text;
                 }
             }
         }

@@ -1,10 +1,10 @@
-@import '../variables/variables.scss';
+@import '../variables/_variables.scss';
 
 
 .Actions {
     .Actions-menu {        
         &__presentation {
-            font-size: 16px;
+            font-size: map-get($font-size--px, max);
             
             .Actions-menu__title {
                 font-weight: map-get($font-weight, bold);
@@ -16,8 +16,8 @@
             justify-content: center;
             margin:20px 0px;
             .Actions-menu__edit {
-                margin:0px 20px;
-                font-size: 15px;
+                margin:0px 10px;
+                font-size: map-get($font-size--px, medium+2);
                 .Actions-menu__button {
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, min);
@@ -29,13 +29,13 @@
                 }
             }
             .Actions-menu__delete {
-                margin:0px 20px;
-                font-size: 15px;
+                margin:0px 10px;
+                font-size: map-get($font-size--px, medium+2);
                 .Actions-menu__button {
                     font-weight: map-get($font-weight, regular);
                     font-size:map-get($font-size--text, min);
                     &:hover {
-                        opacity:0.9;
+                        opacity:0.8;
                     }
                 }
             }

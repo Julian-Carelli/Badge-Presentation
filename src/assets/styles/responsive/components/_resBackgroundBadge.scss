@@ -1,0 +1,34 @@
+@import '../variables/_variables.scss';
+
+.BackgroundBadge {
+    .BackgroundBadge-row {
+        &__info {
+            @include phone-min {
+                font-size: map-get($font-size--px, medium+1);
+            }
+            @include phone-max {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include tablet {
+                font-size: map-get($font-size--px, medium+2);
+            }
+            @include desktop {
+                font-size: map-get($font-size--px, max);
+            }
+            .BackgroundBadge-row__title{
+                @include phone-min {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include phone-max {
+                    font-size: map-get($font-size--text, medium);
+                }
+                @include tablet {
+                    font-size: map-get($font-size--text, max);
+                }
+                @include desktop {
+                    font-size:map-get($font-size--text, max);
+                }
+            }
+        }
+    }
+}

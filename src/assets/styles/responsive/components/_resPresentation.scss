@@ -1,252 +1,250 @@
-@import '../../variables/variables.scss';
+@import '../../variables/_variables.scss';
 
 .Presentation {
-    @media screen and (max-width:320px) and (min-width:0px){
+
+    @include phone-min {
         height:auto;
     }
-    @media screen and (max-width:480px) and (min-width:320px){
+    @include phone-max {
         height:auto;
     }
-    @media screen and (max-width:768px) and (min-width:480px){
+    @include tablet {
         height:auto;
     }
-    @media screen and (max-width:1024px) and (min-width:768px) {
-        height: 100vh;
+    @include desktop {
+        height:100vh
     }
     &__row {
-        @media screen and (max-width:1024px) and (min-width:768px){
-            margin:auto;
+        @include desktop {
+            margin: auto;
         }
         .Presentation-background {
-            @media screen and (max-width:320px)and (min-width:0px){
+            @include phone-min {
                 display: flex;
                 justify-content: flex-start;
             }
-            @media screen and (max-width:480px)and (min-width:320px){
+            @include phone-max {
                 display: flex;
                 justify-content: flex-start;
             }
-            @media screen and (max-width:768px)and (min-width:480px){
+            @include tablet {
                 display: flex;
                 justify-content: center;
             }
             &__img {
-                @media screen and (max-width:320px)and (min-width:0px){
+                @include phone-min {
                     width: 50%;
                     padding:40px 10px;
                 }
-                @media screen and (max-width:480px)and (min-width:320px){
+                @include phone-max {
                     width: 50%;
                     padding:40px 10px;
                 }
-                @media screen and (max-width:768px)and (min-width:480px){
+                @include tablet {
                     width: 40%;
                     padding:80px 10px;
                 }
-                @media screen and (max-width:1024px)and (min-width:768px){
-                    width: 100%;
+                @include desktop {
+                    width:100%;
                 }
             }
         }
         .Presentation-content {
-            @media screen and (max-width:320px)and (min-width:0px){
-                font-size: 13px;
+            @include phone-min {
+                font-size: map-get($font-size--px, medium);
             }
-            @media screen and (max-width:480px)and (min-width:320px){
-                font-size: 14px;
+            @include phone-max {
+                font-size: map-get($font-size--px, medium+1);
             }
-            @media screen and (max-width:768px) and (min-width:480px){
+            @include tablet {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                font-size:15px;
+                font-size: map-get($font-size--px, medium+2);
             }
-            @media screen and (max-width:1024px)and (min-width:768px){
-                font-size: 15px;
+            @include desktop {
+                font-size: map-get($font-size--px, medium+2);
             }
             &__title {
                 font-weight: map-get($font-weight, extra-bold);
                 font-size: map-get($font-size--title, max);
                 color:white;
-                @media screen and (max-width:320px)and (min-width:0px){
+                @include phone-min {
                     font-size:map-get($font-size--title, min);
                 }
-                @media screen and (max-width:480px)and (min-width:320px){
+                @include phone-max {
                     font-size:map-get($font-size--title, min);
                 }
-                @media screen and (max-width:768px) and (min-width:480px){
+                @include tablet {
                     font-size: map-get($font-size--title, medium);
                 }
-                @media screen and (max-width:1024px)and (min-width:768px){
+                @include desktop {
                     font-size: map-get($font-size--title, medium);
                 }
             }
             &__info {
-                @media screen and (max-width:320px) and (min-width:0px){
+                @include phone-min {
                     width: 50%;
                     font-size: 9px;
                 }
-                @media screen and (max-width:480px) and (min-width:320px){
+                @include phone-max {
                     width: 50%;
-                    font-size: 10px;
                     padding:5px 0px;
+                    font-size: map-get($font-size--px, min);
                 }
-                @media screen and (max-width:768px) and (min-width:480px){
+                @include tablet {
                     width: 50%;
-                    font-size: 11px;
                     padding:30px 0px;
                     text-align: center;
+                    font-size: map-get($font-size--px, min+1);
                 }
-                @media screen and (max-width:1024px) and (min-width:768px){
+                @include desktop {
                     width: 100%;
-                    font-size: 13px;
                     padding:0px;
+                    font-size: map-get($font-size--px, medium);
                 }
-                
                .Presentation-content__text {
-                    @media screen and (max-width:320px)and (min-width:0px){
+                    @include phone-min {
                         font-size:map-get($font-size--text, min);
                     }
-                    @media screen and (max-width:480px)and (min-width:320px){
+                    @include phone-max {
                         font-size:map-get($font-size--text, min);
                     }
-                    @media screen and (max-width:768px) and (min-width:480px){
+                    @include tablet {
                         font-size: map-get($font-size--text, medium);
                     }
-                    @media screen and (max-width:1024px) and (min-width:768px){
+                    @include desktop {
                         font-size: map-get($font-size--text, medium);
                     }
                 }
                 .Presentation-content__btn{
-                    @media screen and (max-width:320px)and (min-width:0px){
+                    @include phone-min {
                         font-size:map-get($font-size--text, min);
                     }
-                    @media screen and (max-width:480px)and (min-width:320px){
+                    @include phone-max {
                         font-size:map-get($font-size--text, min);
                     }
-                    @media screen and (max-width:768px) and (min-width:480px){
+                    @include tablet {
                         font-size: map-get($font-size--text, medium);
                     }
-                    @media screen and (max-width:1024px) and (min-width:768px){
+                    @include desktop {
                         font-size: map-get($font-size--text, medium);
                     }
                 }
             }
         }
         .Presentation-recents {
-            @media screen and (max-width:320px)and (min-width:0px){
+            @include phone-min {
                 padding:20px 10px;
-                font-size: 10px;
+                font-size: map-get($font-size--px, min);
             }
-            @media screen and (max-width:480px)and (min-width:320px){
+            @include phone-max {
                 padding:20px 10px;
-                font-size: 11px;
+                font-size: map-get($font-size--px, min+1);
             }
-            @media screen and (max-width:768px) and (min-width:480px){
+            @include tablet {
                 display: flex;
                 flex-direction: column;
                 text-align: center;
-                font-size: 12px;
+                font-size: map-get($font-size--px, min+2);
             }
-            @media screen and (max-width:1024px) and (min-width:768px){
+            @include desktop {
                 display: flex;
                 flex-direction: column;
                 text-align: start;
-                font-size: 12px;
+                font-size: map-get($font-size--px, min+2);
             }
-            
             &__link {
-                @media screen and (max-width:768px) and (min-width:480px){
+                @include tablet {
                     display:flex;
                     justify-content: center;
                     width:100%;
                 }
             }
             &__title{
-                @media screen and (max-width:320px)and (min-width:0px){
+                @include phone-min {
                     font-size: map-get($font-size--text, medium);
                 }
-                @media screen and (max-width:480px)and (min-width:320px){
+                @include phone-max {
                     font-size: map-get($font-size--text, medium);
                 }
-                @media screen and (max-width:768px) and (min-width:480px){
+                @include tablet {
                     font-size: map-get($font-size--title, min);
                 }
-                @media screen and (max-width:1024px) and (min-width:768px){
+                @include desktop {
                     font-size: map-get($font-size--title, min);
                 }
-
             }
             .Card {
                 &__img {
                     .Card__avatar {
-                        @media screen and(max-width:321px) and (min-width:0px) {
+                        @include phone-min {
                             width:60%;
                         }
-                        @media screen and(max-width:480px) and (min-width:320px) {
+                        @include phone-max {
                             width:60%;
                         }
-                        @media screen and (max-width:768px) and (min-width:480px){
+                        @include tablet {
                             width:80%;
                         }
-                        @media screen and (max-width:1024px) and (min-width:768px){
+                        @include desktop {
                             width:80%;
                         }
                     }
                 }
                 &__info {
-                    @media screen and(max-width:320px) and (min-width:0px) {
-                        font-size: 13px;
+                    @include phone-min {
+                        font-size: map-get($font-size--px, medium);
                     }
-                    @media screen and(max-width:480px) and (min-width:320px) {
-                        font-size: 14px;
+                    @include phone-max {
+                        font-size: map-get($font-size--px, medium+1);
                     }
-                    @media screen and (max-width:768px) and (min-width:480px){   
-                        font-size: 15px;
+                    @include tablet {
+                        font-size: map-get($font-size--px, medium+2);
                     }
-                    @media screen and (max-width:768px) and (min-width:480px){
-                        font-size: 15px;
+                    @include desktop {
+                        font-size: map-get($font-size--px, medium+2);
                     }
                     .Card__title-primary {
-                        @media screen and(max-width:320px) and (min-width:0px) {
+                        @include phone-min {
                             font-size:map-get($font-size--text, medium);
                         }
-                        @media screen and(max-width:480px) and (min-width:320px) {
+                        @include phone-max {
                             font-size:map-get($font-size--text, medium);
                         }
-                        @media screen and (max-width:768px) and (min-width:480px){
+                        @include tablet {
                             font-size: map-get($font-size--title, min);
                         }
-                        @media screen and (max-width:1024px) and (min-width:768px){
+                        @include desktop {
                             font-size: map-get($font-size--title, min);
                         }
                     }
                     .Card__title-secondary{
-                        @media screen and(max-width:320px) and (min-width:0px) {
+                        @include phone-min {
                             font-size:map-get($font-size--text, min);
                         }
-                        @media screen and(max-width:480px) and (min-width:320px) {
+                        @include phone-max {
                             font-size:map-get($font-size--text, min);
                         }
-                        @media screen and (max-width:768px) and (min-width:480px){
+                        @include tablet {
                             font-size: map-get($font-size--text, medium);
                         }
-                        @media screen and (max-width:1024px) and (min-width:768px){
+                        @include desktop {
                             font-size: map-get($font-size--text, medium);
                         }
                     }
                     .Card__text {
-                        @media screen and(max-width:320px) and (min-width:0px) {
+                        @include phone-min {
                             font-size:map-get($font-size--text, extra-min);
                         }
-                        @media screen and(max-width:480px) and (min-width:320px) {
+                        @include phone-max {
                             font-size:map-get($font-size--text, extra-min);
                         }
-                        @media screen and (max-width:768px) and (min-width:480px){
+                        @include tablet {
                             font-size: map-get($font-size--text, min);
                         }
-                        @media screen and (max-width:1024px) and (min-width:768px){
+                        @include desktop {
                             font-size: map-get($font-size--text, min);
                         }
                     }
