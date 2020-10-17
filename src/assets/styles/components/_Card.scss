@@ -41,7 +41,9 @@ body {
                 }
             }
         }
-
+        .row {
+            margin:auto;
+        }
         &__presentation {
             display:flex;
             justify-content: center;

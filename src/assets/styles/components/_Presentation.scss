@@ -8,6 +8,9 @@
     height: 100vh;
     padding:0px;
     background: url('../../images/stars.svg'), #1b1b25;
+    .row {
+        margin:auto;
+    }
     
     &__row{
         align-items: center;

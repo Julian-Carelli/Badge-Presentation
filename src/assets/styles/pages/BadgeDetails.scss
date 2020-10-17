@@ -2,9 +2,12 @@
 @import '../components/_Badge';
 @import '../components/_Actions';
 
+
 .BadgeDetails {
-    padding:0px 120px;
     .row {
+        margin:auto;
+    }
+    &__row {
         margin:auto;
     }
 }

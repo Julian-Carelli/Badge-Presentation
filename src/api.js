@@ -1,4 +1,4 @@
-const BASE_URL ='http://my-json-server.typicode.com/julian-carelli/Badge-Presentation';
+const BASE_URL ='https://my-json-server.typicode.com/julian-carelli/Badge-Presentation';
 
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
