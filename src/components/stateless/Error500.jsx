@@ -7,8 +7,12 @@ import {Link} from 'react-router-dom'
 
 import error from '../../assets/images/error500.png'
 
+//Assets
+
+import '../../assets/styles/components/_Error500.scss'
+
 const Error500 = () => (
-    <div className="Error500 container-fluid pl-0 pr-0 ">
+    <div className="Error500 container-fluid">
         <div className="Error500__row bg-white row">
             <div className="Error500-content col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <div className="Error500-content__background">

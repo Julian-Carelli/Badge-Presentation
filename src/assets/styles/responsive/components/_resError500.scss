@@ -4,28 +4,40 @@
     &__row {
         @include phone-min {
             line-height: normal;
+            height: 100vh;
+            align-items: center;
         }
         @include phone-max {
             line-height: normal;
+            height: 100vh;
+            align-items: center;
         }
         @include tablet {
             line-height: normal;
+            height: 100vh;
+            align-items: center;
         }
         @include desktop {
             line-height: normal;
+            height: 100vh;
+            align-items: center;
         }
         .Error500-content {
             @include phone-min {
                 font-size: map-get($font-size--px, medium+1);
+                justify-content: center;
             }
             @include phone-max {
                 font-size: map-get($font-size--px, medium+2);
+                justify-content: center;
             }
             @include tablet {
                 font-size: map-get($font-size--px, medium+2);
+                justify-content: center;
             }
             @include desktop {
                 font-size: map-get($font-size--px, max);
+                justify-content: center;
             }
             &__background {
                 .Error500-content__img {
@@ -46,29 +58,37 @@
             &__title {
                 @include phone-min {
                     font-size: map-get($font-size--text, medium);
+                    text-align: center;
                 }
                 @include phone-max {
                     font-size: map-get($font-size--text, medium);
+                    text-align: center;
                 }
                 @include tablet {
                     font-size: map-get($font-size--title, min);
+                    text-align: center;
                 }
                 @include desktop {
                     font-size: map-get($font-size--title, min);
+                    text-align: center;
                 }
             }
             &__info {
                 @include phone-min {
                     font-size: map-get($font-size--px, min);
+                    text-align: center;
                 }
                 @include phone-max {
                     font-size: map-get($font-size--px, min+1);
+                    text-align: center;
                 }
                 @include tablet {
                     font-size: map-get($font-size--px, min+2);
+                    text-align: center;
                 }
                 @include desktop {
                     font-size: map-get($font-size--px, medium);
+                    text-align: center;
                 }
                 .Error500-content__text{
                     @include phone-min {
